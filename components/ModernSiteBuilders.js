@@ -205,7 +205,14 @@ const ModernSiteBuilders = () => {
                 <p className="text-gray-600 mb-4">Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.</p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-600 font-medium">WordPress • Local SEO</span>
-                  <span className="text-gray-500 text-sm">Demo Project</span>
+                  <a 
+                    href="https://modernsitebuilders.github.io/restaurant-portfolio-demo/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+                  >
+                    View Demo <ArrowRight className="ml-1 w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -224,7 +231,14 @@ const ModernSiteBuilders = () => {
                 <p className="text-gray-600 mb-4">Personal branding website for career advancement with resume integration and LinkedIn optimization.</p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
-                  <span className="text-gray-500 text-sm">Demo Project</span>
+                  <a 
+                    href="https://modernsitebuilders.github.io/professional-portfolio-demo/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+                  >
+                    View Demo <ArrowRight className="ml-1 w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </div>
