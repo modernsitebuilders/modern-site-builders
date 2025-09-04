@@ -320,7 +320,7 @@ const ModernSiteBuilders = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">david@modernsitebuilders.com</p>
+                    <p className="text-gray-600">dave@modernsitebuilders.com</p>
                   </div>
                 </div>
                 
@@ -330,7 +330,7 @@ const ModernSiteBuilders = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">(267) 983-7101</p>
                   </div>
                 </div>
                 
