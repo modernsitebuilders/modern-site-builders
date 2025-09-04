@@ -240,12 +240,21 @@ const ModernSiteBuilders = () => {
         </div>
       </section>
 
-      {/* Trust/Credentials Section */}
+      {/* About Section with Profile */}
       <section id="testimonials" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Modern Site Builders</h2>
-            <p className="text-xl text-gray-600">Professional expertise you can trust</p>
+            <div className="flex justify-center mb-8">
+              <img 
+                src="/profile_pic-1.png" 
+                alt="David Miles - Professional Web Developer" 
+                className="w-32 h-32 rounded-full object-cover shadow-lg"
+              />
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Hi, I'm David Miles</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+              Professional WordPress developer helping local businesses get found online with mobile-friendly websites that drive real results.
+            </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
