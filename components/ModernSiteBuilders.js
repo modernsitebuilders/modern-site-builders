@@ -181,7 +181,7 @@ const ModernSiteBuilders = () => {
       </div>
     </div>
     <div className="p-6">
-      <h3 className="text-lg font-semibold text-gray-900 mb-2">StreamBackdrops</h3>
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Stream Backdrops</h3>
       <p className="text-gray-600 mb-4">Virtual backgrounds platform fully optimized for streamers and content creators with seamless performance.</p>
       <div className="flex items-center justify-between">
         <span className="text-sm text-blue-600 font-medium">Next.js • React • Vercel</span>
