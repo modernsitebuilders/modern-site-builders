@@ -379,9 +379,11 @@ const ModernSiteBuilders = () => {
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center mb-6">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">M</span>
-            </div>
+            <img 
+              src="/logo1.png" 
+              alt="Modern Site Builders Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
           </div>
           <p className="text-gray-400 mb-4">

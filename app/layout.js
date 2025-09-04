@@ -12,7 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo2.png" />
+        <link rel="apple-touch-icon" href="/logo2.png" />
         <meta name="theme-color" content="#2563eb" />
         <meta property="og:title" content="Modern Site Builders | Professional WordPress Developer" />
         <meta property="og:description" content="Professional websites for local businesses and working professionals. Get found online with mobile-friendly websites that drive results." />
