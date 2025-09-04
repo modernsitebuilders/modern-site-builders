@@ -257,14 +257,13 @@ const ModernSiteBuilders = () => {
 </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Ready to build something similar for your business or career?</p>
-            <button 
-              onClick={() => scrollToSection('contact')} 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
-            >
-              Start Your Project
-            </button>
-          </div>
+  <button 
+    onClick={() => scrollToSection('contact')} 
+    className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow text-lg"
+  >
+    Start Your Project
+  </button>
+</div>
         </div>
       </section>
 
