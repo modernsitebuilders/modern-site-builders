@@ -51,14 +51,17 @@ const ModernSiteBuilders = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <img 
-                src="/logo1.png" 
-                alt="Modern Site Builders Logo" 
-                className="w-10 h-10 object-contain"
-              />
-              <span className="ml-3 text-xl font-bold text-gray-900">Modern Site Builders</span>
-            </div>
+            <button 
+  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+  className="flex items-center hover:opacity-80 transition-opacity cursor-pointer"
+>
+  <img 
+    src="/logo1.png" 
+    alt="Modern Site Builders Logo" 
+    className="w-10 h-10 object-contain"
+  />
+  <span className="ml-3 text-xl font-bold text-gray-900">Modern Site Builders</span>
+</button>
             
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
