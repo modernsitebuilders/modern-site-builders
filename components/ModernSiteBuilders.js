@@ -96,7 +96,7 @@ const ModernSiteBuilders = () => {
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Websites That Get You 
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Found & Chosen</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Found & Hired</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Professional websites for local businesses and working professionals who want to stand out, get discovered, and win more opportunities.
@@ -152,28 +152,90 @@ const ModernSiteBuilders = () => {
         </div>
       </section>
 
-      {/* Portfolio Placeholder Section */}
+      {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Portfolio Coming Soon</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Work</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              I'm currently building an impressive portfolio of client work to showcase here. Each project demonstrates real results for local businesses and professionals.
+              Examples of modern, professional websites built with cutting-edge technology and optimized for performance.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3].map((item) => (
-              <div key={item} className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                  <Globe className="w-12 h-12 text-blue-600" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Project Showcase {item}</h3>
-                  <p className="text-gray-600">Professional website showcasing real results for local businesses and working professionals.</p>
+            {/* StreamBackdrops */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+              <div className="h-48 bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20"></div>
+                <Smartphone className="w-12 h-12 text-purple-600 z-10" />
+                <div className="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                  LIVE
                 </div>
               </div>
-            ))}
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">StreamBackdrops</h3>
+                <p className="text-gray-600 mb-4">Virtual backgrounds platform fully optimized for streamers and content creators with seamless performance.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-blue-600 font-medium">Next.js • React • Vercel</span>
+                  <a 
+                    href="https://streambackdrops.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+                  >
+                    View Live <ArrowRight className="ml-1 w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Italian Restaurant Demo */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+              <div className="h-48 bg-gradient-to-br from-red-100 to-orange-100 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
+                <Users className="w-12 h-12 text-red-600 z-10" />
+                <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                  DEMO
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Bella Vista Restaurant</h3>
+                <p className="text-gray-600 mb-4">Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-blue-600 font-medium">WordPress • Local SEO</span>
+                  <span className="text-gray-500 text-sm">Demo Project</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Personal Portfolio Demo */}
+            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+              <div className="h-48 bg-gradient-to-br from-green-100 to-teal-100 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20"></div>
+                <TrendingUp className="w-12 h-12 text-green-600 z-10" />
+                <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+                  DEMO
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Professional Portfolio</h3>
+                <p className="text-gray-600 mb-4">Personal branding website for career advancement with resume integration and LinkedIn optimization.</p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
+                  <span className="text-gray-500 text-sm">Demo Project</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-600 mb-6">Ready to build something similar for your business or career?</p>
+            <button 
+              onClick={() => scrollToSection('contact')} 
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
+            >
+              Start Your Project
+            </button>
           </div>
         </div>
       </section>
@@ -243,7 +305,7 @@ const ModernSiteBuilders = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">(267) 983-7101</p>
+                    <p className="text-gray-600">(555) 123-4567</p>
                   </div>
                 </div>
                 
