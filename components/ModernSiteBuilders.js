@@ -167,85 +167,96 @@ const ModernSiteBuilders = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* StreamBackdrops */}
-            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-              <div className="h-48 bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-blue-600/20"></div>
-                <Smartphone className="w-12 h-12 text-purple-600 z-10" />
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                  LIVE
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">StreamBackdrops</h3>
-                <p className="text-gray-600 mb-4">Virtual backgrounds platform fully optimized for streamers and content creators with seamless performance.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-blue-600 font-medium">Next.js • React • Vercel</span>
-                  <a 
-                    href="https://streambackdrops.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-                  >
-                    View Live <ArrowRight className="ml-1 w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
+          // Replace your current portfolio grid section with this updated version:
 
-            {/* Italian Restaurant Demo */}
-            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-              <div className="h-48 bg-gradient-to-br from-red-100 to-orange-100 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-orange-600/20"></div>
-                <Users className="w-12 h-12 text-red-600 z-10" />
-                <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                  DEMO
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Bella Vista Restaurant</h3>
-                <p className="text-gray-600 mb-4">Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-blue-600 font-medium">WordPress • Local SEO</span>
-                  <a 
-                    href="https://modernsitebuilders.github.io/restaurant-portfolio-demo/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-                  >
-                    View Demo <ArrowRight className="ml-1 w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* StreamBackdrops */}
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div className="h-48 overflow-hidden relative">
+      <img 
+        src="/Screenshot-streambackdrops.png" 
+        alt="StreamBackdrops Website Screenshot"
+        className="w-full h-full object-cover object-top"
+      />
+      <div className="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+        LIVE
+      </div>
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">StreamBackdrops</h3>
+      <p className="text-gray-600 mb-4">Virtual backgrounds platform fully optimized for streamers and content creators with seamless performance.</p>
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-blue-600 font-medium">Next.js • React • Vercel</span>
+        <a 
+          href="https://streambackdrops.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+        >
+          View Live <ArrowRight className="ml-1 w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
 
-            {/* Personal Portfolio Demo */}
-            <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-              <div className="h-48 bg-gradient-to-br from-green-100 to-teal-100 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-600/20 to-teal-600/20"></div>
-                <TrendingUp className="w-12 h-12 text-green-600 z-10" />
-                <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-                  DEMO
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Professional Portfolio</h3>
-                <p className="text-gray-600 mb-4">Personal branding website for career advancement with resume integration and LinkedIn optimization.</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
-                  <a 
-                    href="https://modernsitebuilders.github.io/professional-portfolio-demo/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-                  >
-                    View Demo <ArrowRight className="ml-1 w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+  {/* Italian Restaurant Demo */}
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div className="h-48 overflow-hidden relative">
+      <img 
+        src="/Screenshot-restaurant.png" 
+        alt="Bella Vista Restaurant Website Screenshot"
+        className="w-full h-full object-cover object-top"
+      />
+      <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+        DEMO
+      </div>
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Bella Vista Restaurant</h3>
+      <p className="text-gray-600 mb-4">Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.</p>
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-blue-600 font-medium">WordPress • Local SEO</span>
+        <a 
+          href="https://modernsitebuilders.github.io/restaurant-portfolio-demo/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+        >
+          View Demo <ArrowRight className="ml-1 w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Personal Portfolio Demo */}
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div className="h-48 overflow-hidden relative">
+      <img 
+        src="/Screenshot-personal.png" 
+        alt="Professional Portfolio Website Screenshot"
+        className="w-full h-full object-cover object-top"
+      />
+      <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+        DEMO
+      </div>
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Professional Portfolio</h3>
+      <p className="text-gray-600 mb-4">Personal branding website for career advancement with resume integration and LinkedIn optimization.</p>
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
+        <a 
+          href="https://modernsitebuilders.github.io/professional-portfolio-demo/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+        >
+          View Demo <ArrowRight className="ml-1 w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-6">Ready to build something similar for your business or career?</p>
