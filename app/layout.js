@@ -1,4 +1,8 @@
 import './globals.css'
+import Script from 'next/script'
+
+// Your Google Analytics Measurement ID
+const GA_MEASUREMENT_ID = 'G-KMQNHVJ385'
 
 export const metadata = {
   title: 'Modern Site Builders | Professional WordPress Developer',
@@ -12,6 +16,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        
         <link rel="icon" href="/logo2.png" />
         <link rel="apple-touch-icon" href="/logo2.png" />
         <meta name="theme-color" content="#2563eb" />
