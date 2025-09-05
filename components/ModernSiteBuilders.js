@@ -387,19 +387,47 @@ const handleSubmit = async (e) => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">dave@modernsitebuilders.com</p>
+                    <a 
+  href="mailto:dave@modernsitebuilders.com"
+  onClick={() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'email_click', {
+        event_category: 'lead_generation',
+        event_label: 'contact_email',
+        value: 50
+      });
+    }
+  }}
+  className="text-gray-600 hover:text-blue-600 transition-colors"
+>
+  dave@modernsitebuilders.com
+</a>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                    <Phone className="w-6 h-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">(267) 983-7101</p>
-                  </div>
-                </div>
+  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+    <Phone className="w-6 h-6 text-purple-600" />
+  </div>
+  <div>
+    <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
+    <a 
+      href="tel:267-983-7101"
+      onClick={() => {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'phone_click', {
+            event_category: 'lead_generation',
+            event_label: 'contact_phone',
+            value: 75
+          });
+        }
+      }}
+      className="text-gray-600 hover:text-blue-600 transition-colors"
+    >
+      (267) 983-7101
+    </a>
+  </div>
+</div>
                 
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
