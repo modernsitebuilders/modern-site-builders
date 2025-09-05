@@ -39,11 +39,49 @@ const ModernSiteBuilders = () => {
     setIsMenuOpen(false);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission here - you can integrate with your preferred form service
-    alert('Thank you for your message! I\'ll get back to you soon.');
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  const formData = new FormData(e.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    projectType: formData.get('projectType'),
+    message: formData.get('message'),
+    timestamp: new Date().toISOString(),
+    source: 'modernsitebuilders.com'
   };
+
+  try {
+    // Formspree form submission
+    const response = await fetch('https://formspree.io/f/xwpnwyje', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      // Track successful form submission
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'contact_form_submit', {
+          event_category: 'lead_generation',
+          event_label: 'main_contact_form',
+          value: 100
+        });
+      }
+      
+      alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+      e.target.reset(); // Clear the form
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    console.error('Form submission error:', error);
+    alert('There was an issue sending your message. Please email me directly at dave@modernsitebuilders.com');
+  }
+};
 
   return (
     <div className="min-h-screen bg-white">
@@ -362,7 +400,8 @@ const ModernSiteBuilders = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input 
-                    type="text" 
+                    type="text"
+                    name="name"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Your name"
@@ -372,7 +411,8 @@ const ModernSiteBuilders = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input 
-                    type="email" 
+                    type="email"
+                    name="email"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="your@email.com"
@@ -381,7 +421,9 @@ const ModernSiteBuilders = () => {
                 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                  <select 
+                    name="projectType"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <option>Business Website</option>
                     <option>Professional Portfolio</option>
                     <option>SEO Services</option>
@@ -393,6 +435,7 @@ const ModernSiteBuilders = () => {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                   <textarea 
                     rows="4"
+                    name="message"
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Tell me about your project..."
