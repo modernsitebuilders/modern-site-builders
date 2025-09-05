@@ -245,6 +245,15 @@ const handleSubmit = async (e) => {
           href="https://streambackdrops.com" 
           target="_blank" 
           rel="noopener noreferrer"
+          onClick={() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'portfolio_click', {
+        event_category: 'engagement',
+        event_label: 'streambackdrops_live',
+        value: 10
+      });
+    }
+  }}
           className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
         >
           View Live <ArrowRight className="ml-1 w-4 h-4" />
@@ -274,6 +283,15 @@ const handleSubmit = async (e) => {
           href="https://modernsitebuilders.github.io/restaurant-portfolio-demo/" 
           target="_blank" 
           rel="noopener noreferrer"
+          onClick={() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'portfolio_click', {
+        event_category: 'engagement',
+        event_label: 'restaurant_demo',
+        value: 10
+      });
+    }
+  }}
           className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
         >
           View Demo <ArrowRight className="ml-1 w-4 h-4" />
@@ -303,6 +321,15 @@ const handleSubmit = async (e) => {
           href="https://modernsitebuilders.github.io/professional-portfolio-demo/" 
           target="_blank" 
           rel="noopener noreferrer"
+          onClick={() => {
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'portfolio_click', {
+        event_category: 'engagement',
+        event_label: 'personal_portfolio_demo',
+        value: 10
+      });
+    }
+  }}
           className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
         >
           View Demo <ArrowRight className="ml-1 w-4 h-4" />
