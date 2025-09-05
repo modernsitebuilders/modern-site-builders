@@ -63,13 +63,31 @@ const handleSubmit = async (e) => {
     });
 
     if (response.ok) {
-      // Track successful form submission
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'contact_form_submit', {
+      // Enhanced analytics tracking with debugging
+      console.log('Form submitted successfully, tracking event...');
+      
+      // Check if gtag is available
+      if (typeof window !== 'undefined' && window.gtag) {
+        console.log('gtag found, sending event...');
+        window.gtag('event', 'contact_form_submit', {
           event_category: 'lead_generation',
           event_label: 'main_contact_form',
           value: 100
         });
+        console.log('Analytics event sent');
+      } else {
+        console.log('gtag not available');
+        
+        // Alternative tracking method - push directly to dataLayer
+        if (typeof window !== 'undefined' && window.dataLayer) {
+          console.log('Using dataLayer instead...');
+          window.dataLayer.push({
+            event: 'contact_form_submit',
+            event_category: 'lead_generation',
+            event_label: 'main_contact_form',
+            value: 100
+          });
+        }
       }
       
       alert('Thank you for your message! I\'ll get back to you within 24 hours.');
