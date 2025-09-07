@@ -241,11 +241,10 @@ const handleSubmit = async (e) => {
       <p className="text-gray-600 mb-4">Virtual backgrounds platform fully optimized for streamers and content creators with seamless performance.</p>
       <div className="flex items-center justify-between">
         <span className="text-sm text-blue-600 font-medium">Next.js • React • Vercel</span>
-        <a 
-          href="https://streambackdrops.com" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          onClick={() => {
+       <a 
+  href="#" 
+  onClick={(e) => {
+    e.preventDefault();
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'portfolio_click', {
         event_category: 'engagement',
@@ -253,11 +252,12 @@ const handleSubmit = async (e) => {
         value: 10
       });
     }
+    window.open('https://streambackdrops.com', '_blank', 'noopener,noreferrer');
   }}
-          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-        >
-          View Live <ArrowRight className="ml-1 w-4 h-4" />
-        </a>
+  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+>
+  View Live <ArrowRight className="ml-1 w-4 h-4" />
+</a>
       </div>
     </div>
   </div>
@@ -279,11 +279,10 @@ const handleSubmit = async (e) => {
       <p className="text-gray-600 mb-4">Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.</p>
       <div className="flex items-center justify-between">
         <span className="text-sm text-blue-600 font-medium">WordPress • Local SEO</span>
-        <a 
-          href="https://modernsitebuilders.github.io/restaurant-portfolio-demo/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          onClick={() => {
+       <a 
+  href="#" 
+  onClick={(e) => {
+    e.preventDefault();
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'portfolio_click', {
         event_category: 'engagement',
@@ -291,11 +290,12 @@ const handleSubmit = async (e) => {
         value: 10
       });
     }
+    window.open('https://modernsitebuilders.github.io/restaurant-portfolio-demo/', '_blank', 'noopener,noreferrer');
   }}
-          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-        >
-          View Demo <ArrowRight className="ml-1 w-4 h-4" />
-        </a>
+  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+>
+  View Demo <ArrowRight className="ml-1 w-4 h-4" />
+</a>
       </div>
     </div>
   </div>
@@ -318,10 +318,9 @@ const handleSubmit = async (e) => {
       <div className="flex items-center justify-between">
         <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
         <a 
-          href="https://modernsitebuilders.github.io/professional-portfolio-demo/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          onClick={() => {
+  href="#" 
+  onClick={(e) => {
+    e.preventDefault();
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('event', 'portfolio_click', {
         event_category: 'engagement',
@@ -329,11 +328,12 @@ const handleSubmit = async (e) => {
         value: 10
       });
     }
+    window.open('https://modernsitebuilders.github.io/professional-portfolio-demo/', '_blank', 'noopener,noreferrer');
   }}
-          className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
-        >
-          View Demo <ArrowRight className="ml-1 w-4 h-4" />
-        </a>
+  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+>
+  View Demo <ArrowRight className="ml-1 w-4 h-4" />
+</a>
       </div>
     </div>
   </div>
