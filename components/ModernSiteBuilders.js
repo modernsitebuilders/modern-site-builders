@@ -213,6 +213,8 @@ const handleSubmit = async (e) => {
         </div>
       </section>
 
+      
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -224,6 +226,44 @@ const handleSubmit = async (e) => {
           </div>
           
 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  {/* Dumpster Size Calculator */}
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div className="h-48 overflow-hidden relative">
+      <img 
+        src="/Screenshot-dumpster-calc.png" 
+        alt="Dumpster Size Calculator Website Screenshot"
+        className="w-full h-full object-cover object-top"
+      />
+      <div className="absolute top-4 right-4 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+        LIVE
+      </div>
+    </div>
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900 mb-2">Dumpster Size Calculator</h3>
+      <p className="text-gray-600 mb-4">Smart calculation tool that considers material weight and volume to prevent costly overage fees for contractors and homeowners.</p>
+      <div className="flex items-center justify-between">
+        <span className="text-sm text-blue-600 font-medium">Next.js • React • Local SEO</span>
+       <a 
+  href="#" 
+  onClick={(e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('event', 'portfolio_click', {
+        event_category: 'engagement',
+        event_label: 'dumpster_calculator_live',
+        value: 10
+      });
+    }
+    window.open('https://www.dumpster-size-calculator.com/', '_blank', 'noopener,noreferrer');
+  }}
+  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
+>
+  View Live <ArrowRight className="ml-1 w-4 h-4" />
+</a>
+      </div>
+    </div>
+  </div>
+
   {/* StreamBackdrops */}
   <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
     <div className="h-48 overflow-hidden relative">
@@ -337,7 +377,7 @@ const handleSubmit = async (e) => {
       </div>
     </div>
   </div>
-</div>
+  </div>
 
           <div className="text-center mt-12">
   <button 
