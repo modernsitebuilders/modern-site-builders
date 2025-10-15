@@ -254,7 +254,7 @@ const handleSubmit = async (e) => {
         value: 10
       });
     }
-    window.open('https://www.dumpster-size-calculator.com/', '_blank', 'noopener,noreferrer');
+    window.open('https://dumpster-size-calculator.com/', '_blank', 'noopener,noreferrer');
   }}
   className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
 >
