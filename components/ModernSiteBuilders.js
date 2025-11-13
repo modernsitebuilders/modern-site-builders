@@ -372,44 +372,6 @@ const handleSubmit = async (e) => {
       </div>
     </div>
   </div>
-
-  {/* Personal Portfolio Demo */}
-  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
-    <div className="h-48 overflow-hidden relative">
-      <img 
-        src="/Screenshot-personal.png" 
-        alt="Professional Portfolio Website Screenshot"
-        className="w-full h-full object-cover object-top"
-      />
-      <div className="absolute top-4 right-4 bg-blue-500 text-white px-2 py-1 rounded-full text-xs font-medium">
-        DEMO
-      </div>
-    </div>
-    <div className="p-6">
-      <h3 className="text-lg font-semibold text-gray-900 mb-2">Professional Portfolio</h3>
-      <p className="text-gray-600 mb-4">Personal branding website for career advancement with resume integration and LinkedIn optimization.</p>
-      <div className="flex items-center justify-between">
-        <span className="text-sm text-blue-600 font-medium">React • Personal Brand</span>
-        <a 
-  href="#" 
-  onClick={(e) => {
-    e.preventDefault();
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'portfolio_click', {
-        event_category: 'engagement',
-        event_label: 'personal_portfolio_demo',
-        value: 10
-      });
-    }
-    window.open('https://modernsitebuilders.github.io/professional-portfolio-demo/', '_blank', 'noopener,noreferrer');
-  }}
-  className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium"
->
-  View Demo <ArrowRight className="ml-1 w-4 h-4" />
-</a>
-      </div>
-    </div>
-  </div>
   </div>
 
           <div className="text-center mt-12">
