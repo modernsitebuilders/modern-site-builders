@@ -225,8 +225,8 @@ const handleSubmit = async (e) => {
             </p>
           </div>
           
-<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {/* Dumpster Size Calculator */}
+          {/* Dumpster Size Calculator */}
+<div className="grid md:grid-cols-2 gap-8"> 
   <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
     <div className="h-48 overflow-hidden relative">
       <img 
