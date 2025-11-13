@@ -262,6 +262,8 @@ const handleSubmit = async (e) => {
 </a>
       </div>
     </div>
+</div>
+
 {/* Job Calculators */}
   <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
     <div className="h-48 overflow-hidden relative">
@@ -299,7 +301,10 @@ const handleSubmit = async (e) => {
       </div>
     </div>
   </div>
-    <div className="h-48 overflow-hidden relative">
+
+  {/* StreamBackdrops */}
+  <div className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group">
+    <div className="h-64 overflow-hidden relative">
       <img 
         src="/Screenshot-streambackdrops.png" 
         alt="StreamBackdrops Website Screenshot"
