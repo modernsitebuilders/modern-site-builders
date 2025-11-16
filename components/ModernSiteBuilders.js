@@ -567,25 +567,31 @@ const handleSubmit = async (e) => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <img 
-              src="/logo1.png" 
-              alt="Modern Site Builders Logo" 
-              className="w-10 h-10 object-contain"
-            />
-            <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
-          </div>
-          <p className="text-gray-400 mb-4">
-            Professional websites for local businesses and working professionals.
-          </p>
-          <p className="text-gray-500 text-sm">
-            © 2025 Modern Site Builders. Built by David Miles.
-          </p>
-        </div>
-      </footer>
+     {/* Footer */}
+<footer className="bg-gray-900 text-white py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div className="flex items-center justify-center mb-6">
+      <img 
+        src="/logo1.png" 
+        alt="Modern Site Builders Logo" 
+        className="w-10 h-10 object-contain"
+      />
+      <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
+    </div>
+    <p className="text-gray-400 mb-4">
+      Professional websites for local businesses and working professionals.
+    </p>
+    <p className="text-gray-500 text-sm mb-2">
+      © 2025 Modern Site Builders. Built by David Miles.
+    </p>
+    <a 
+      href="/privacy" 
+      className="text-gray-400 hover:text-white text-sm transition-colors inline-block"
+    >
+      Privacy Policy
+    </a>
+  </div>
+</footer>
     </div>
   );
 };
