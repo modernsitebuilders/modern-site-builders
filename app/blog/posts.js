@@ -15,6 +15,54 @@ export const posts = [
     ogImage: '/logo1.png',
   },
   {
+    slug: 'how-to-choose-a-web-developer',
+    title: 'How to Choose a Web Developer: 10 Questions to Ask Before You Hire',
+    description:
+      'The questions that separate developers who build sites that perform from developers who just decorate. A practical hiring checklist for businesses spending $3K–$20K on a custom build.',
+    date: '2026-05-05',
+    updated: '2026-05-05',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Hiring', 'Business Websites'],
+    ogImage: '/logo1.png',
+  },
+  {
+    slug: 'behind-the-build-meetbackdrops',
+    title: 'Behind the Build: MeetBackdrops and the Productized-Service Playbook',
+    description:
+      'How MeetBackdrops turned a saturated stock-photo category into a productized service business — and what the catalog → branded-backgrounds funnel teaches about productizing your own service.',
+    date: '2026-04-28',
+    updated: '2026-04-28',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Case Study', 'Productized Services'],
+    ogImage: '/Screenshot-meetbackdrops.jpg',
+  },
+  {
+    slug: 'behind-the-build-wolfresume',
+    title: 'Behind the Build: WolfResume and Why Most Resume Tools Fail at ATS',
+    description:
+      'A teardown of how Applicant Tracking Systems actually read resumes, why most builders ignore them, and how WolfResume was architected schema-first to produce ATS-compliant output.',
+    date: '2026-04-20',
+    updated: '2026-04-20',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['Case Study', 'AI Tools'],
+    ogImage: '/Screenshot-wolfresume.jpg',
+  },
+  {
+    slug: 'local-seo-checklist-2026',
+    title: 'The Local SEO Checklist for Small Businesses in 2026',
+    description:
+      '10 unglamorous fundamentals that move local businesses from page 3 to page 1 of Google — the same checklist I run on every new client engagement, in priority order.',
+    date: '2026-04-12',
+    updated: '2026-04-12',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['SEO', 'Local Business'],
+    ogImage: '/logo1.png',
+  },
+  {
     slug: 'behind-the-build-rightdumpster',
     title: 'Behind the Build: How RightDumpster Helps Contractors Avoid Overage Fees',
     description:

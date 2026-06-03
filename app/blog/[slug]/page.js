@@ -7,12 +7,20 @@ import CustomBusinessWebsiteCost2026 from '../content/custom-business-website-co
 import BehindTheBuildRightDumpster from '../content/behind-the-build-rightdumpster';
 import BehindTheBuildRemodelCalculators from '../content/behind-the-build-remodelcalculators';
 import WixSquarespaceVsCustom2026 from '../content/wix-squarespace-vs-custom-2026';
+import HowToChooseAWebDeveloper from '../content/how-to-choose-a-web-developer';
+import BehindTheBuildMeetBackdrops from '../content/behind-the-build-meetbackdrops';
+import BehindTheBuildWolfResume from '../content/behind-the-build-wolfresume';
+import LocalSEOChecklist2026 from '../content/local-seo-checklist-2026';
 
 const contentBySlug = {
   'custom-business-website-cost-2026': CustomBusinessWebsiteCost2026,
   'behind-the-build-rightdumpster': BehindTheBuildRightDumpster,
   'behind-the-build-remodelcalculators': BehindTheBuildRemodelCalculators,
   'wix-squarespace-vs-custom-2026': WixSquarespaceVsCustom2026,
+  'how-to-choose-a-web-developer': HowToChooseAWebDeveloper,
+  'behind-the-build-meetbackdrops': BehindTheBuildMeetBackdrops,
+  'behind-the-build-wolfresume': BehindTheBuildWolfResume,
+  'local-seo-checklist-2026': LocalSEOChecklist2026,
 };
 
 export function generateStaticParams() {
