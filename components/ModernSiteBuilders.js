@@ -164,9 +164,10 @@ const handleSubmit = async (e) => {
             </button>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
               <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors">Services</button>
               <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</button>
+              <a href="/blog/" className="text-gray-700 hover:text-blue-600 transition-colors">Blog</a>
               <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors">About</button>
               <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">Get Started</button>
             </div>
@@ -186,6 +187,7 @@ const handleSubmit = async (e) => {
               <div className="flex flex-col space-y-3 pt-4">
                 <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-blue-600 py-2">Services</button>
                 <button onClick={() => scrollToSection('portfolio')} className="text-left text-gray-700 hover:text-blue-600 py-2">Portfolio</button>
+                <a href="/blog/" className="text-left text-gray-700 hover:text-blue-600 py-2">Blog</a>
                 <button onClick={() => scrollToSection('testimonials')} className="text-left text-gray-700 hover:text-blue-600 py-2">About</button>
                 <button onClick={() => scrollToSection('contact')} className="text-left bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors w-fit">Get Started</button>
               </div>
