@@ -22,24 +22,94 @@ export const viewport = {
 }
 
 export default function RootLayout({ children }) {
+  const ownedSites = [
+    {
+      "@type": "WebSite",
+      "@id": "https://remodelcalculators.com/#website",
+      "name": "RemodelCalculators",
+      "url": "https://remodelcalculators.com",
+      "description": "Professional construction calculators for contractors and DIY remodels."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rightdumpster.com/#website",
+      "name": "RightDumpster",
+      "url": "https://rightdumpster.com",
+      "description": "Weight-aware dumpster sizing calculator and rental guide."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://meetbackdrops.com/#website",
+      "name": "MeetBackdrops",
+      "url": "https://meetbackdrops.com",
+      "description": "Studio-quality 4K virtual backgrounds for Zoom, Teams, and Google Meet."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wolfresume.com/#website",
+      "name": "WolfResume",
+      "url": "https://wolfresume.com",
+      "description": "AI resume generator engineered for ATS parsing and recruiter-ready output."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://promptdynamo.com/#website",
+      "name": "PromptDynamo",
+      "url": "https://promptdynamo.com",
+      "description": "Done-for-you AI prompt packs for working professionals."
+    }
+  ]
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Modern Site Builders",
-    "description": "Professional website development for local businesses and working professionals",
-    "url": "https://modernsitebuilders.com",
-    "founder": {
-      "@type": "Person",
-      "name": "David Miles"
-    },
-    "areaServed": "United States",
-    "serviceType": ["Web Development", "WordPress Development", "React Development", "SEO Services"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-267-983-7101",
-      "email": "dave@modernsitebuilders.com",
-      "contactType": "Customer Service"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://modernsitebuilders.com/#organization",
+        "name": "Modern Site Builders",
+        "url": "https://modernsitebuilders.com",
+        "logo": "https://modernsitebuilders.com/logo1.png",
+        "image": "https://modernsitebuilders.com/logo1.png",
+        "description": "Modern Site Builders designs and operates a network of production websites and interactive tools — covering construction calculators, dumpster sizing, virtual meeting backgrounds, ATS-ready resumes, and AI prompt packs.",
+        "founder": {
+          "@type": "Person",
+          "name": "David Miles"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-267-983-7101",
+          "email": "dave@modernsitebuilders.com",
+          "contactType": "Customer Service",
+          "areaServed": "US",
+          "availableLanguage": "English"
+        },
+        "areaServed": "United States",
+        "sameAs": ownedSites.map(s => s.url),
+        "owns": ownedSites,
+        "subOrganization": ownedSites
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://modernsitebuilders.com/#service",
+        "name": "Modern Site Builders",
+        "url": "https://modernsitebuilders.com",
+        "description": "Professional website development for local businesses and working professionals.",
+        "provider": { "@id": "https://modernsitebuilders.com/#organization" },
+        "areaServed": "United States",
+        "serviceType": ["Web Development", "WordPress Development", "React Development", "SEO Services"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://modernsitebuilders.com/#website",
+        "url": "https://modernsitebuilders.com",
+        "name": "Modern Site Builders",
+        "publisher": { "@id": "https://modernsitebuilders.com/#organization" }
+      },
+      ...ownedSites.map(site => ({
+        ...site,
+        "publisher": { "@id": "https://modernsitebuilders.com/#organization" }
+      }))
+    ]
   }
 
   return (
