@@ -4,17 +4,527 @@ import React, { useState, useEffect } from 'react';
 import { ChevronRight, Star, Globe, Smartphone, TrendingUp, Users, Mail, Phone, MapPin, ArrowRight, Check, Menu, X } from 'lucide-react';
 
 const ModernSiteBuilders = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const services = [
+    {
+      icon: <Globe className="w-8 h-8" />,
+      title: "Business Websites",
+      description: "Professional websites that get local businesses found online and convert visitors into customers.",
+      features: ["Mobile-responsive design", "Local SEO optimization", "Contact forms & booking", "Google My Business integration"]
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Professional Portfolios",
+      description: "Stand out from the crowd with a personal website that showcases your expertise and attracts opportunities.",
+      features: ["Personal branding", "Portfolio showcase", "Resume integration", "LinkedIn optimization"]
+    },
+    {
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "SEO & Growth",
+      description: "Get found on Google with search engine optimization that drives real results for your business.",
+      features: ["Keyword research", "Local search optimization", "Performance tracking", "Monthly reporting"]
+    }
+  ];
+
+  const portfolio = [
+    {
+      title: "MeetBackdrops",
+      description: "Virtual set design studio offering studio-quality 4K backgrounds for Zoom, Teams, and Google Meet — designed as cohesive sets, not stock photos.",
+      tech: "Next.js • React • E-commerce",
+      image: "/Screenshot-meetbackdrops.jpg",
+      url: "https://meetbackdrops.com",
+      label: "LIVE",
+      eventLabel: "meetbackdrops_live"
+    },
+    {
+      title: "PromptDynamo",
+      description: "Done-for-you AI prompt packs built for working professionals. Instant download, Stripe checkout, and zero account friction.",
+      tech: "Next.js • React • Stripe",
+      image: "/Screenshot-promptdynamo.jpg",
+      url: "https://promptdynamo.com",
+      label: "LIVE",
+      eventLabel: "promptdynamo_live"
+    },
+    {
+      title: "RemodelCalculators",
+      description: "Professional construction calculator suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro plans for contractor tools.",
+      tech: "Next.js • React • Pro Plans",
+      image: "/Screenshot-remodelcalculators.jpg",
+      url: "https://remodelcalculators.com",
+      label: "LIVE",
+      eventLabel: "remodelcalculators_live"
+    },
+    {
+      title: "RightDumpster",
+      description: "The honest guide to renting a dumpster — sizes, costs, permits, and city-specific rules with no spam calls, no signups, and a weight-aware sizing calculator.",
+      tech: "Next.js • React • Local SEO",
+      image: "/Screenshot-rightdumpster.jpg",
+      url: "https://rightdumpster.com",
+      label: "LIVE",
+      eventLabel: "rightdumpster_live"
+    },
+    {
+      title: "WolfResume",
+      description: "AI-powered resume generator engineered for ATS parsing and recruiter-ready structure — not a template builder, not raw ChatGPT.",
+      tech: "Next.js • React • AI",
+      image: "/Screenshot-wolfresume.jpg",
+      url: "https://wolfresume.com",
+      label: "LIVE",
+      eventLabel: "wolfresume_live"
+    },
+    {
+      title: "Bella Vista Restaurant",
+      description: "Modern restaurant website with online menu, reservations, and local SEO optimization for authentic Italian dining.",
+      tech: "WordPress • Local SEO",
+      image: "/Screenshot-restaurant.png",
+      url: "https://modernsitebuilders.github.io/restaurant-portfolio-demo/",
+      label: "DEMO",
+      eventLabel: "restaurant_demo"
+    }
+  ];
+
+  const scrollToSection = (sectionId) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(e.target);
+  const data = {
+    name: formData.get('name'),
+    email: formData.get('email'),
+    projectType: formData.get('projectType'),
+    message: formData.get('message'),
+    timestamp: new Date().toISOString(),
+    source: 'modernsitebuilders.com'
+  };
+
+  try {
+    const response = await fetch('https://formspree.io/f/xwpnwyje', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      if (typeof window !== 'undefined' && window.gtag) {
+        window.gtag('event', 'contact_form_submit', {
+          event_category: 'lead_generation',
+          event_label: 'main_contact_form',
+          value: 100
+        });
+      } else if (typeof window !== 'undefined' && window.dataLayer) {
+        window.dataLayer.push({
+          event: 'contact_form_submit',
+          event_category: 'lead_generation',
+          event_label: 'main_contact_form',
+          value: 100
+        });
+      }
+
+      alert('Thank you for your message! I\'ll get back to you within 24 hours.');
+      e.target.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    console.error('Form submission error:', error);
+    alert('There was an issue sending your message. Please email me directly at dave@modernsitebuilders.com');
+  }
+};
+
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Modern Site Builders</h1>
-        <p className="text-xl text-gray-600 mb-8">Currently building. Check back soon.</p>
-        <div className="space-y-2">
-          <a href="https://streambackdrops.com" className="block text-blue-600 hover:underline">→ StreamBackdrops</a>
-          <a href="https://jobcalculators.com" className="block text-blue-600 hover:underline">→ Job Calculators</a>
-          <a href="https://dumpster-size-calculators.com" className="block text-blue-600 hover:underline">→ Dumpster Size Calculators</a>
+    <div className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${scrollY > 50 ? 'bg-white shadow-lg py-2' : 'bg-transparent py-4'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center hover:opacity-80 transition-opacity cursor-pointer"
+            >
+              <img
+                src="/logo1.png"
+                alt="Modern Site Builders Logo"
+                className="w-10 h-10 object-contain"
+              />
+              <span className="ml-3 text-xl font-bold text-gray-900">Modern Site Builders</span>
+            </button>
+
+            {/* Desktop Menu */}
+            <div className="hidden md:flex space-x-8">
+              <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 transition-colors">Services</button>
+              <button onClick={() => scrollToSection('portfolio')} className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</button>
+              <button onClick={() => scrollToSection('testimonials')} className="text-gray-700 hover:text-blue-600 transition-colors">About</button>
+              <button onClick={() => scrollToSection('contact')} className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">Get Started</button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden p-2"
+            >
+              {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 border-t">
+              <div className="flex flex-col space-y-3 pt-4">
+                <button onClick={() => scrollToSection('services')} className="text-left text-gray-700 hover:text-blue-600 py-2">Services</button>
+                <button onClick={() => scrollToSection('portfolio')} className="text-left text-gray-700 hover:text-blue-600 py-2">Portfolio</button>
+                <button onClick={() => scrollToSection('testimonials')} className="text-left text-gray-700 hover:text-blue-600 py-2">About</button>
+                <button onClick={() => scrollToSection('contact')} className="text-left bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors w-fit">Get Started</button>
+              </div>
+            </div>
+          )}
         </div>
-      </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+              Websites That Get You
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Found & Chosen</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              Professional websites for local businesses and working professionals who want to stand out, get discovered, and win more opportunities.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center"
+              >
+                Get Your Website Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </button>
+              <button
+                onClick={() => scrollToSection('portfolio')}
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-colors"
+              >
+                View My Work
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Services That Drive Results</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Whether you're a local business or working professional, I create websites that help you get found, build trust, and win more opportunities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100">
+                <div className="text-blue-600 mb-6">
+                  {service.icon}
+                </div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="flex items-center text-gray-700">
+                      <Check className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Recent Work</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A selection of modern, production websites and tools — each built with performance, SEO, and conversion in mind.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {portfolio.map((project, index) => {
+              const isLive = project.label === 'LIVE';
+              return (
+                <div key={index} className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden group flex flex-col">
+                  <div className="h-48 overflow-hidden relative bg-gray-100">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} Website Screenshot`}
+                      className="w-full h-full object-cover object-top"
+                    />
+                    <div className={`absolute top-4 right-4 ${isLive ? 'bg-green-500' : 'bg-blue-500'} text-white px-2 py-1 rounded-full text-xs font-medium`}>
+                      {project.label}
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
+                    <p className="text-gray-600 mb-4 flex-1">{project.description}</p>
+                    <div className="flex items-center justify-between mt-auto">
+                      <span className="text-sm text-blue-600 font-medium">{project.tech}</span>
+                      <a
+                        href={project.url}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          if (typeof window !== 'undefined' && window.gtag) {
+                            window.gtag('event', 'portfolio_click', {
+                              event_category: 'engagement',
+                              event_label: project.eventLabel,
+                              value: 10
+                            });
+                          }
+                          window.open(project.url, '_blank', 'noopener,noreferrer');
+                        }}
+                        className="text-blue-600 hover:text-blue-800 transition-colors flex items-center text-sm font-medium whitespace-nowrap"
+                      >
+                        {isLive ? 'View Live' : 'View Demo'} <ArrowRight className="ml-1 w-4 h-4" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="text-center mt-12">
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow text-lg"
+            >
+              Start Your Project
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section with Profile */}
+      <section id="testimonials" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="flex justify-center mb-8">
+              <img
+                src="/profile_pic-1.png"
+                alt="David Miles - Professional Web Developer"
+                className="w-32 h-32 rounded-full object-cover shadow-lg"
+              />
+            </div>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Hi, I'm David Miles</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+              I build production websites and interactive tools for local businesses and working professionals — sites engineered to get found, build trust, and drive real results.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Globe className="w-8 h-8 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Modern Stack</h3>
+              <p className="text-gray-600">Next.js, React, and Tailwind — fast, mobile-first sites built on the same stack used by today's top web products.</p>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow text-center">
+              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MapPin className="w-8 h-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Local Focus</h3>
+              <p className="text-gray-600">Understanding local business needs and helping you connect with customers in your area.</p>
+            </div>
+
+            <div className="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow text-center">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <TrendingUp className="w-8 h-8 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Results Driven</h3>
+              <p className="text-gray-600">Every website is built with one goal: helping you get found online and grow your business.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Let's discuss how a professional website can help grow your business or advance your career.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="space-y-8">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                    <Mail className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Email</h3>
+                    <a
+                      href="mailto:dave@modernsitebuilders.com"
+                      onClick={() => {
+                        if (typeof window !== 'undefined' && window.gtag) {
+                          window.gtag('event', 'email_click', {
+                            event_category: 'lead_generation',
+                            event_label: 'contact_email',
+                            value: 50
+                          });
+                        }
+                      }}
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      dave@modernsitebuilders.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                    <Phone className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
+                    <a
+                      href="tel:267-983-7101"
+                      onClick={() => {
+                        if (typeof window !== 'undefined' && window.gtag) {
+                          window.gtag('event', 'phone_click', {
+                            event_category: 'lead_generation',
+                            event_label: 'contact_phone',
+                            value: 75
+                          });
+                        }
+                      }}
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
+                    >
+                      (267) 983-7101
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">Service Area</h3>
+                    <p className="text-gray-600">Local businesses & remote professionals</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <form className="space-y-6" onSubmit={handleSubmit}>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Project Type</label>
+                  <select
+                    name="projectType"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <option>Business Website</option>
+                    <option>Professional Portfolio</option>
+                    <option>Interactive Tool / Calculator</option>
+                    <option>SEO Services</option>
+                    <option>Website Redesign</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <textarea
+                    rows="4"
+                    name="message"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    placeholder="Tell me about your project..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-shadow"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="flex items-center justify-center mb-6">
+            <img
+              src="/logo1.png"
+              alt="Modern Site Builders Logo"
+              className="w-10 h-10 object-contain"
+            />
+            <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
+          </div>
+          <p className="text-gray-400 mb-4">
+            Professional websites for local businesses and working professionals.
+          </p>
+          <p className="text-gray-500 text-sm mb-2">
+            © 2026 Modern Site Builders. Built by David Miles.
+          </p>
+          <a
+            href="/privacy"
+            className="text-gray-400 hover:text-white text-sm transition-colors inline-block"
+          >
+            Privacy Policy
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
