@@ -36,24 +36,6 @@ const ModernSiteBuilders = () => {
 
   const portfolio = [
     {
-      title: "MeetBackdrops",
-      description: "Virtual set design studio offering studio-quality 4K backgrounds for Zoom, Teams, and Google Meet — designed as cohesive sets, not stock photos.",
-      tech: "Next.js • React • E-commerce",
-      image: "/Screenshot-meetbackdrops.jpg",
-      url: "https://meetbackdrops.com",
-      label: "LIVE",
-      eventLabel: "meetbackdrops_live"
-    },
-    {
-      title: "PromptDynamo",
-      description: "Done-for-you AI prompt packs built for working professionals. Instant download, Stripe checkout, and zero account friction.",
-      tech: "Next.js • React • Stripe",
-      image: "/Screenshot-promptdynamo.jpg",
-      url: "https://promptdynamo.com",
-      label: "LIVE",
-      eventLabel: "promptdynamo_live"
-    },
-    {
       title: "RemodelCalculators",
       description: "Professional construction calculator suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro plans for contractor tools.",
       tech: "Next.js • React • Pro Plans",
@@ -72,6 +54,15 @@ const ModernSiteBuilders = () => {
       eventLabel: "rightdumpster_live"
     },
     {
+      title: "MeetBackdrops",
+      description: "Virtual set design studio offering studio-quality 4K backgrounds for Zoom, Teams, and Google Meet — designed as cohesive sets, not stock photos.",
+      tech: "Next.js • React • E-commerce",
+      image: "/Screenshot-meetbackdrops.jpg",
+      url: "https://meetbackdrops.com",
+      label: "LIVE",
+      eventLabel: "meetbackdrops_live"
+    },
+    {
       title: "WolfResume",
       description: "AI-powered resume generator engineered for ATS parsing and recruiter-ready structure — not a template builder, not raw ChatGPT.",
       tech: "Next.js • React • AI",
@@ -79,6 +70,15 @@ const ModernSiteBuilders = () => {
       url: "https://wolfresume.com",
       label: "LIVE",
       eventLabel: "wolfresume_live"
+    },
+    {
+      title: "PromptDynamo",
+      description: "Done-for-you AI prompt packs built for working professionals. Instant download, Stripe checkout, and zero account friction.",
+      tech: "Next.js • React • Stripe",
+      image: "/Screenshot-promptdynamo.jpg",
+      url: "https://promptdynamo.com",
+      label: "LIVE",
+      eventLabel: "promptdynamo_live"
     },
     {
       title: "Bella Vista Restaurant",
