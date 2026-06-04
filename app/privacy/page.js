@@ -32,9 +32,12 @@ export default function PrivacyPolicy() {
         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-8">
           <strong className="block mb-2">This policy applies to:</strong>
           <ul className="space-y-1">
-            <li>→ dumpster-size-calculator.com</li>
-            <li>→ jobcalculators.com</li>
-            <li>→ streambackdrops.com</li>
+            <li>→ modernsitebuilders.com</li>
+            <li>→ remodelcalculators.com</li>
+            <li>→ rightdumpster.com</li>
+            <li>→ meetbackdrops.com</li>
+            <li>→ wolfresume.com</li>
+            <li>→ promptdynamo.com</li>
           </ul>
         </div>
 
