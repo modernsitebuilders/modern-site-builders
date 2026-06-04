@@ -5,14 +5,57 @@ import Script from 'next/script'
 const GA_MEASUREMENT_ID = 'G-KMQNHVJ385'
 
 export const metadata = {
-  title: 'Modern Site Builders | Professional WordPress & React Developer',
-  description: 'Professional websites for local businesses and working professionals. Creator of interactive tools like dumpster size calculators. Get found online with mobile-friendly websites that drive results.',
-  keywords: 'wordpress developer, react developer, website design, local business websites, professional portfolios, SEO optimization, web applications, interactive tools',
-  author: 'David Miles',
-  robots: 'index, follow',
-  alternates: {
-    canonical: 'https://modernsitebuilders.com'
-  }
+  metadataBase: new URL('https://modernsitebuilders.com'),
+  title: {
+    default: 'Modern Site Builders | WordPress & React Developer',
+    template: '%s | Modern Site Builders',
+  },
+  description:
+    'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that get found on Google and drive leads.',
+  keywords: [
+    'wordpress developer',
+    'react developer',
+    'website design',
+    'local business websites',
+    'professional portfolios',
+    'SEO optimization',
+    'web applications',
+    'interactive tools',
+  ],
+  authors: [{ name: 'David Miles' }],
+  creator: 'David Miles',
+  publisher: 'Modern Site Builders',
+  robots: { index: true, follow: true },
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Modern Site Builders',
+    title: 'Modern Site Builders | WordPress & React Developer',
+    description:
+      'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that drive leads.',
+    url: 'https://modernsitebuilders.com',
+    locale: 'en_US',
+    images: [
+      {
+        url: '/logo1.png',
+        width: 512,
+        height: 512,
+        alt: 'Modern Site Builders',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Modern Site Builders | WordPress & React Developer',
+    description:
+      'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that drive leads.',
+    images: ['/logo1.png'],
+  },
+  icons: {
+    icon: '/logo2.png',
+    apple: '/logo2.png',
+  },
+  formatDetection: { telephone: false },
 }
 
 export const viewport = {
@@ -136,30 +179,7 @@ export default function RootLayout({ children }) {
         <Script id="structured-data" type="application/ld+json">
           {JSON.stringify(structuredData)}
         </Script>
-        
-        {/* Favicons */}
-        <link rel="icon" href="/logo2.png" sizes="any" />
-        <link rel="icon" href="/logo2.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/logo2.png" />
-        
-        {/* Open Graph */}
-        <meta property="og:title" content="Modern Site Builders | Professional WordPress & React Developer" />
-        <meta property="og:description" content="Professional websites for local businesses and working professionals. Creator of interactive tools like dumpster size calculators." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://modernsitebuilders.com" />
-        <meta property="og:image" content="https://modernsitebuilders.com/logo1.png" />
-        <meta property="og:image:alt" content="Modern Site Builders Logo" />
-        <meta property="og:site_name" content="Modern Site Builders" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Modern Site Builders | Professional Web Developer" />
-        <meta name="twitter:description" content="Professional websites for local businesses and working professionals. Get found online with mobile-friendly websites." />
-        <meta name="twitter:image" content="https://modernsitebuilders.com/logo1.png" />
-        
-        {/* Additional SEO */}
-        <meta name="generator" content="Next.js" />
-        <meta name="format-detection" content="telephone=no" />
+
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="antialiased">

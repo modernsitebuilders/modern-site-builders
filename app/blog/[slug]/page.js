@@ -30,11 +30,13 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const post = getPost(params.slug);
   if (!post) return {};
-  const url = `https://modernsitebuilders.com/blog/${post.slug}/`;
+  const path = `/blog/${post.slug}`;
+  const url = `https://modernsitebuilders.com${path}`;
+  const metaTitle = post.metaTitle || post.title;
   return {
-    title: `${post.title} — Modern Site Builders`,
+    title: { absolute: metaTitle },
     description: post.description,
-    alternates: { canonical: url },
+    alternates: { canonical: path },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -43,13 +45,15 @@ export function generateMetadata({ params }) {
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
       authors: [post.author],
-      images: post.ogImage ? [{ url: `https://modernsitebuilders.com${post.ogImage}` }] : undefined,
+      images: post.ogImage
+        ? [{ url: post.ogImage, alt: post.title }]
+        : undefined,
     },
     twitter: {
       card: 'summary_large_image',
       title: post.title,
       description: post.description,
-      images: post.ogImage ? [`https://modernsitebuilders.com${post.ogImage}`] : undefined,
+      images: post.ogImage ? [post.ogImage] : undefined,
     },
   };
 }

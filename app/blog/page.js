@@ -2,16 +2,24 @@ import Link from 'next/link';
 import { posts } from './posts';
 
 export const metadata = {
-  title: 'Blog — Modern Site Builders',
+  title: 'Blog',
   description:
-    'Honest writing on what it takes to build websites that actually generate leads in 2026 — case studies, pricing, and the engineering behind production sites.',
-  alternates: { canonical: 'https://modernsitebuilders.com/blog/' },
+    'Honest writing on what it takes to build websites that generate leads in 2026 — case studies, pricing, and engineering behind production sites.',
+  alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Blog — Modern Site Builders',
+    title: 'Blog | Modern Site Builders',
     description:
-      'Honest writing on what it takes to build websites that actually generate leads in 2026.',
-    url: 'https://modernsitebuilders.com/blog/',
+      'Case studies, pricing breakdowns, and engineering writeups on building websites that generate leads.',
+    url: 'https://modernsitebuilders.com/blog',
     type: 'website',
+    images: [{ url: '/logo1.png', width: 512, height: 512, alt: 'Modern Site Builders' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Modern Site Builders',
+    description:
+      'Case studies, pricing breakdowns, and engineering writeups on building websites that generate leads.',
+    images: ['/logo1.png'],
   },
 };
 

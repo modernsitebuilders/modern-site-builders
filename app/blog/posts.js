@@ -1,12 +1,13 @@
 // Blog posts. Add a new entry at the top to publish.
-// `content` is JSX rendered as the article body — keep it semantic HTML.
+// `metaTitle` is optional — when present it's used as the <title> tag (≤60 chars);
+// otherwise `title` is used. Keeps long descriptive H1s without breaking SEO.
 
 export const posts = [
   {
     slug: 'custom-business-website-cost-2026',
     title: 'How Much Does a Custom Business Website Cost in 2026?',
     description:
-      'A straight-talk breakdown of what a custom-built business website actually costs in 2026 — from $500 starter sites to $15,000+ tool-driven builds — and what you get at each tier.',
+      'Straight-talk pricing for custom business websites in 2026 — from $500 starter sites to $15K+ tool-driven builds, with what you get at each tier.',
     date: '2026-06-03',
     updated: '2026-06-03',
     readMinutes: 6,
@@ -17,8 +18,9 @@ export const posts = [
   {
     slug: 'how-to-choose-a-web-developer',
     title: 'How to Choose a Web Developer: 10 Questions to Ask Before You Hire',
+    metaTitle: 'How to Choose a Web Developer: 10 Questions to Ask',
     description:
-      'The questions that separate developers who build sites that perform from developers who just decorate. A practical hiring checklist for businesses spending $3K–$20K on a custom build.',
+      'Ten questions that separate developers who build sites that perform from ones who just decorate — a practical hiring checklist for $3K–$20K custom builds.',
     date: '2026-05-05',
     updated: '2026-05-05',
     readMinutes: 7,
@@ -29,8 +31,9 @@ export const posts = [
   {
     slug: 'behind-the-build-meetbackdrops',
     title: 'Behind the Build: MeetBackdrops and the Productized-Service Playbook',
+    metaTitle: "Behind the Build: MeetBackdrops' Productized-Service Playbook",
     description:
-      'How MeetBackdrops turned a saturated stock-photo category into a productized service business — and what the catalog → branded-backgrounds funnel teaches about productizing your own service.',
+      'How MeetBackdrops turned a saturated stock-photo category into a productized service — and what its catalog-to-custom funnel teaches about productizing yours.',
     date: '2026-04-28',
     updated: '2026-04-28',
     readMinutes: 7,
@@ -41,8 +44,9 @@ export const posts = [
   {
     slug: 'behind-the-build-wolfresume',
     title: 'Behind the Build: WolfResume and Why Most Resume Tools Fail at ATS',
+    metaTitle: 'Behind the Build: Why Resume Tools Fail ATS (WolfResume)',
     description:
-      'A teardown of how Applicant Tracking Systems actually read resumes, why most builders ignore them, and how WolfResume was architected schema-first to produce ATS-compliant output.',
+      'How Applicant Tracking Systems actually read resumes, why most builders ignore them, and how WolfResume was architected schema-first for ATS-compliant output.',
     date: '2026-04-20',
     updated: '2026-04-20',
     readMinutes: 8,
@@ -54,7 +58,7 @@ export const posts = [
     slug: 'local-seo-checklist-2026',
     title: 'The Local SEO Checklist for Small Businesses in 2026',
     description:
-      '10 unglamorous fundamentals that move local businesses from page 3 to page 1 of Google — the same checklist I run on every new client engagement, in priority order.',
+      'Ten unglamorous fundamentals that move local businesses from page 3 to page 1 of Google — the checklist I run on every new client, in priority order.',
     date: '2026-04-12',
     updated: '2026-04-12',
     readMinutes: 8,
@@ -65,8 +69,9 @@ export const posts = [
   {
     slug: 'behind-the-build-rightdumpster',
     title: 'Behind the Build: How RightDumpster Helps Contractors Avoid Overage Fees',
+    metaTitle: 'Behind the Build: How RightDumpster Avoids Overage Fees',
     description:
-      'A walkthrough of how RightDumpster was designed — why dumpster sizing is harder than it looks, the weight-aware calculator engine, and how the site converts cold search traffic into rentals.',
+      'How RightDumpster was built — why dumpster sizing is harder than it looks, the weight-aware calculator, and how it converts cold search into rentals.',
     date: '2026-05-28',
     updated: '2026-05-28',
     readMinutes: 7,
@@ -77,8 +82,9 @@ export const posts = [
   {
     slug: 'behind-the-build-remodelcalculators',
     title: 'Behind the Build: RemodelCalculators — A 40+ Calculator Suite on Next.js',
+    metaTitle: "Behind the Build: RemodelCalculators' 40+ Calculator Suite",
     description:
-      'How RemodelCalculators went from a single drywall calculator to a 40+ tool suite covering interior, exterior, and code-compliance estimation — and the architecture that made it scale.',
+      'How RemodelCalculators grew from a single drywall tool to a 40+ calculator suite covering interior, exterior, and code-compliance estimation.',
     date: '2026-05-20',
     updated: '2026-05-20',
     readMinutes: 8,
@@ -89,8 +95,9 @@ export const posts = [
   {
     slug: 'wix-squarespace-vs-custom-2026',
     title: 'Why More Local Businesses Are Leaving Wix and Squarespace in 2026',
+    metaTitle: 'Why Local Businesses Are Leaving Wix and Squarespace in 2026',
     description:
-      'The hidden costs of template builders for serious local businesses — performance ceilings, SEO limits, lock-in fees — and when a custom build actually saves money.',
+      'The hidden costs of template builders for serious local businesses — performance ceilings, SEO limits, lock-in fees — and when custom actually saves money.',
     date: '2026-05-12',
     updated: '2026-05-12',
     readMinutes: 6,

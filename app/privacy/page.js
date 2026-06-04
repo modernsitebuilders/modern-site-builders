@@ -1,6 +1,21 @@
 export const metadata = {
-  title: 'Privacy Policy - Modern Site Builders',
-  description: 'Privacy policy for Modern Site Builders, dumpster-size-calculator.com, jobcalculators.com, and streambackdrops.com',
+  title: 'Privacy Policy',
+  description:
+    'How Modern Site Builders handles data: we collect basic anonymous usage analytics, do not sell data, and do not track you across the web.',
+  alternates: { canonical: '/privacy' },
+  openGraph: {
+    title: 'Privacy Policy | Modern Site Builders',
+    description:
+      'How Modern Site Builders handles data: anonymous usage analytics only, no data selling, no cross-site tracking.',
+    url: 'https://modernsitebuilders.com/privacy',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Modern Site Builders',
+    description:
+      'How Modern Site Builders handles data: anonymous usage analytics only, no data selling, no cross-site tracking.',
+  },
 };
 
 export default function PrivacyPolicy() {
