@@ -63,7 +63,7 @@ export default function PostContent() {
         If you're building an AI tool, the question worth answering before you ship: <em>what problem are you actually solving that doesn't go away when raw LLMs get cheaper?</em> For WolfResume, the answer is structured output and parser-correctness — things that require deliberate engineering, not just a prompt.
       </p>
       <p className="mb-4">
-        Building something AI-adjacent and want a second opinion on the positioning? <a href="/#contact" className="text-blue-600 hover:underline">Drop me a line</a> — I've thought about this category a lot.
+        I've spent a lot of time on this category building WolfResume. If you're working on something AI-adjacent and want to compare notes, <a href="/#contact" className="text-blue-600 hover:underline">drop me a line</a>.
       </p>
     </>
   );

@@ -57,7 +57,7 @@ export default function PostContent() {
         If you sell anything where customers have to do math before buying — flooring, fencing, roofing, paint, mulch, concrete, dumpster rental — a calculator-first site is almost always the best SEO + conversion play. It ranks because it's useful. It converts because users feel competent before they ever talk to you.
       </p>
       <p className="mb-4">
-        Curious whether your business has a tool worth building? <a href="/#contact" className="text-blue-600 hover:underline">Send me a note</a> — happy to look at your category and tell you whether a calculator angle would work.
+        "Does this category have a tool worth building?" is the question behind every project in my portfolio. The rest of the teardowns are in the <a href="/blog/" className="text-blue-600 hover:underline">build logs</a>.
       </p>
     </>
   );

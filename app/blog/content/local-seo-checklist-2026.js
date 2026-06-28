@@ -102,7 +102,7 @@ export default function PostContent() {
         That's 80% of the local SEO benefit for 20% of the work.
       </p>
       <p className="mb-4">
-        Want a local SEO audit on your current site? <a href="/#contact" className="text-blue-600 hover:underline">Reach out</a> — I'll run through this checklist on your business and send you a punch list of what to fix.
+        This is the same checklist I run on my own sites before reaching for anything fancier. If you're working through it on a project of your own and want to compare notes, <a href="/#contact" className="text-blue-600 hover:underline">say hi</a>.
       </p>
     </>
   );

@@ -59,7 +59,7 @@ export default function PostContent() {
       </ol>
 
       <p className="mb-4">
-        Need a build quote? <a href="/#contact" className="text-blue-600 hover:underline">Get in touch</a> — I'll give you a realistic number with the line items broken out.
+        These are the same numbers I weigh when deciding whether a build is worth my own time. If you're pricing one out and want to compare notes, <a href="/#contact" className="text-blue-600 hover:underline">get in touch</a>.
       </p>
     </>
   );

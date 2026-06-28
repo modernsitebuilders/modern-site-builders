@@ -7,20 +7,20 @@ const GA_MEASUREMENT_ID = 'G-KMQNHVJ385'
 export const metadata = {
   metadataBase: new URL('https://modernsitebuilders.com'),
   title: {
-    default: 'Modern Site Builders | WordPress & React Developer',
+    default: 'Modern Site Builders | Building useful internet businesses in public',
     template: '%s | Modern Site Builders',
   },
   description:
-    'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that get found on Google and drive leads.',
+    'David Miles designs, builds, and operates a portfolio of niche websites and interactive tools — and writes the build logs behind them. Experiments, growth data, and lessons from building useful internet businesses in public.',
   keywords: [
-    'wordpress developer',
-    'react developer',
-    'website design',
-    'local business websites',
-    'professional portfolios',
-    'SEO optimization',
-    'web applications',
+    'building in public',
+    'indie web builder',
+    'niche websites',
     'interactive tools',
+    'SEO case studies',
+    'web business portfolio',
+    'David Miles',
+    'Next.js builder',
   ],
   authors: [{ name: 'David Miles' }],
   creator: 'David Miles',
@@ -30,9 +30,9 @@ export const metadata = {
   openGraph: {
     type: 'website',
     siteName: 'Modern Site Builders',
-    title: 'Modern Site Builders | WordPress & React Developer',
+    title: 'Modern Site Builders | Building useful internet businesses in public',
     description:
-      'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that drive leads.',
+      'A portfolio of niche websites and interactive tools, built and operated in public — with the experiments, growth data, and lessons behind each one.',
     url: 'https://modernsitebuilders.com',
     locale: 'en_US',
     images: [
@@ -46,9 +46,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modern Site Builders | WordPress & React Developer',
+    title: 'Modern Site Builders | Building useful internet businesses in public',
     description:
-      'Custom websites and interactive tools for local businesses and working professionals. Fast, mobile-friendly builds that drive leads.',
+      'A portfolio of niche websites and interactive tools, built and operated in public — with the experiments, growth data, and lessons behind each one.',
     images: ['/logo1.png'],
   },
   icons: {
@@ -71,37 +71,45 @@ export default function RootLayout({ children }) {
       "@id": "https://remodelcalculators.com/#website",
       "name": "RemodelCalculators",
       "url": "https://remodelcalculators.com",
-      "description": "Professional construction calculators for contractors and DIY remodels."
+      "description": "Professional construction calculators for contractors and DIY remodels.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61588161942173"]
     },
     {
       "@type": "WebSite",
       "@id": "https://rightdumpster.com/#website",
       "name": "RightDumpster",
       "url": "https://rightdumpster.com",
-      "description": "Weight-aware dumpster sizing calculator and rental guide."
+      "description": "Weight-aware dumpster sizing calculator and rental guide.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61588454787698"]
     },
     {
       "@type": "WebSite",
       "@id": "https://meetbackdrops.com/#website",
       "name": "MeetBackdrops",
       "url": "https://meetbackdrops.com",
-      "description": "Studio-quality 4K virtual backgrounds for Zoom, Teams, and Google Meet."
+      "description": "Studio-quality 4K virtual backgrounds for Zoom, Teams, and Google Meet.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61588330383610"]
     },
     {
       "@type": "WebSite",
       "@id": "https://wolfresume.com/#website",
       "name": "WolfResume",
       "url": "https://wolfresume.com",
-      "description": "AI resume generator engineered for ATS parsing and recruiter-ready output."
+      "description": "AI resume generator engineered for ATS parsing and recruiter-ready output.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61588600918064"]
     },
     {
       "@type": "WebSite",
       "@id": "https://promptdynamo.com/#website",
       "name": "PromptDynamo",
       "url": "https://promptdynamo.com",
-      "description": "Done-for-you AI prompt packs for working professionals."
+      "description": "Done-for-you AI prompt packs for working professionals.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61588539059595"]
     }
   ]
+
+  const MSB_FACEBOOK = "https://www.facebook.com/profile.php?id=61579816034483"
+  const DAVID_LINKEDIN = "https://www.linkedin.com/in/dave-miles-webdev/"
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -113,33 +121,30 @@ export default function RootLayout({ children }) {
         "url": "https://modernsitebuilders.com",
         "logo": "https://modernsitebuilders.com/logo1.png",
         "image": "https://modernsitebuilders.com/logo1.png",
-        "description": "Modern Site Builders designs and operates a network of production websites and interactive tools — covering construction calculators, dumpster sizing, virtual meeting backgrounds, ATS-ready resumes, and AI prompt packs.",
-        "founder": {
-          "@type": "Person",
-          "name": "David Miles"
-        },
+        "description": "Modern Site Builders is the umbrella for a portfolio of niche websites and interactive tools built and operated by David Miles — covering construction calculators, dumpster sizing, virtual meeting backgrounds, ATS-ready resumes, and AI prompt packs.",
+        "founder": { "@id": "https://modernsitebuilders.com/#david-miles" },
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+1-267-983-7101",
           "email": "dave@modernsitebuilders.com",
-          "contactType": "Customer Service",
-          "areaServed": "US",
+          "contactType": "General Inquiries",
           "availableLanguage": "English"
         },
-        "areaServed": "United States",
-        "sameAs": ownedSites.map(s => s.url),
+        "sameAs": [MSB_FACEBOOK],
         "owns": ownedSites,
         "subOrganization": ownedSites
       },
       {
-        "@type": "ProfessionalService",
-        "@id": "https://modernsitebuilders.com/#service",
-        "name": "Modern Site Builders",
-        "url": "https://modernsitebuilders.com",
-        "description": "Professional website development for local businesses and working professionals.",
-        "provider": { "@id": "https://modernsitebuilders.com/#organization" },
-        "areaServed": "United States",
-        "serviceType": ["Web Development", "WordPress Development", "React Development", "SEO Services"]
+        "@type": "Person",
+        "@id": "https://modernsitebuilders.com/#david-miles",
+        "name": "David Miles",
+        "url": "https://modernsitebuilders.com/author/david-miles",
+        "mainEntityOfPage": "https://modernsitebuilders.com/author/david-miles",
+        "image": "https://modernsitebuilders.com/profile_pic-1.png",
+        "description": "Independent web builder and operator. David designs, builds, and runs a portfolio of niche websites and interactive tools, and documents the experiments, growth data, and lessons behind them.",
+        "jobTitle": "Founder & Operator",
+        "worksFor": { "@id": "https://modernsitebuilders.com/#organization" },
+        "owns": ownedSites,
+        "sameAs": [DAVID_LINKEDIN]
       },
       {
         "@type": "WebSite",

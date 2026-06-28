@@ -68,7 +68,7 @@ export default function PostContent() {
         A custom build is only better if it's <em>actually</em> built well. A bad custom site is worse than a decent template site. If you're going custom, ask the developer for their own page speed scores, their portfolio's traffic data, and the SEO work they include by default. If they can't answer those questions, the template might be the safer call.
       </p>
       <p className="mb-4">
-        Considering a switch? <a href="/#contact" className="text-blue-600 hover:underline">I do this kind of build</a> — happy to take a look at your current site and give you an honest opinion on whether moving makes sense.
+        I build everything in my own portfolio custom for exactly these reasons. If you're weighing the same trade-off and want to compare notes, <a href="/#contact" className="text-blue-600 hover:underline">get in touch</a>.
       </p>
     </>
   );

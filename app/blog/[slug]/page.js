@@ -102,8 +102,8 @@ export default function PostPage({ params }) {
             <img src="/logo1.png" alt="Modern Site Builders" className="w-10 h-10 object-contain" />
             <span className="ml-3 text-xl font-bold text-gray-900">Modern Site Builders</span>
           </Link>
-          <Link href="/#contact" className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors">
-            Get a Quote
+          <Link href="/#portfolio" className="text-gray-700 hover:text-blue-600 text-sm font-semibold transition-colors">
+            Projects
           </Link>
         </div>
       </header>
@@ -131,7 +131,9 @@ export default function PostPage({ params }) {
               )}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">{post.title}</h1>
-            <p className="text-sm text-gray-500">By {post.author}</p>
+            <p className="text-sm text-gray-500">
+              By <Link href="/author/david-miles" className="text-blue-600 hover:text-blue-800 font-medium">{post.author}</Link>
+            </p>
           </header>
 
           <div className="prose-content text-gray-800 leading-relaxed">
@@ -140,15 +142,15 @@ export default function PostPage({ params }) {
 
           {/* CTA */}
           <div className="mt-16 p-8 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl text-center">
-            <h3 className="text-2xl font-bold text-gray-900 mb-3">Need a website that actually generates leads?</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">More from the workshop</h3>
             <p className="text-gray-600 mb-6 max-w-xl mx-auto">
-              I build custom sites and interactive tools for local businesses and professionals. Let's talk about what your business needs.
+              I build and operate a portfolio of niche websites and interactive tools — and write the build log behind each one. Browse the rest of the projects and notes.
             </p>
             <Link
-              href="/#contact"
+              href="/#portfolio"
               className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-shadow"
             >
-              Get in touch →
+              See the projects →
             </Link>
           </div>
         </article>
@@ -177,7 +179,7 @@ export default function PostPage({ params }) {
             <img src="/logo1.png" alt="Modern Site Builders" className="w-10 h-10 object-contain" />
             <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
           </Link>
-          <p className="text-gray-400 mb-4">Professional websites for local businesses and working professionals.</p>
+          <p className="text-gray-400 mb-4">Building and operating useful internet businesses in public.</p>
           <p className="text-gray-500 text-sm mb-2">© 2026 Modern Site Builders. Built by David Miles.</p>
           <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors inline-block">
             Privacy Policy

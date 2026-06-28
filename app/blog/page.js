@@ -4,21 +4,21 @@ import { posts } from './posts';
 export const metadata = {
   title: 'Blog',
   description:
-    'Honest writing on what it takes to build websites that generate leads in 2026 — case studies, pricing, and engineering behind production sites.',
+    'Build logs from a portfolio of niche websites and interactive tools — case studies, growth data, and honest lessons from building useful internet businesses in public.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Blog | Modern Site Builders',
+    title: 'Build Logs | Modern Site Builders',
     description:
-      'Case studies, pricing breakdowns, and engineering writeups on building websites that generate leads.',
+      'Case studies, growth data, and honest lessons from building and operating a portfolio of niche websites and tools.',
     url: 'https://modernsitebuilders.com/blog',
     type: 'website',
     images: [{ url: '/logo1.png', width: 512, height: 512, alt: 'Modern Site Builders' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog | Modern Site Builders',
+    title: 'Build Logs | Modern Site Builders',
     description:
-      'Case studies, pricing breakdowns, and engineering writeups on building websites that generate leads.',
+      'Case studies, growth data, and honest lessons from building and operating a portfolio of niche websites and tools.',
     images: ['/logo1.png'],
   },
 };
@@ -42,8 +42,8 @@ export default function BlogIndex() {
             <img src="/logo1.png" alt="Modern Site Builders" className="w-10 h-10 object-contain" />
             <span className="ml-3 text-xl font-bold text-gray-900">Modern Site Builders</span>
           </Link>
-          <Link href="/#contact" className="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition-colors">
-            Get a Quote
+          <Link href="/#portfolio" className="text-gray-700 hover:text-blue-600 text-sm font-semibold transition-colors">
+            Projects
           </Link>
         </div>
       </header>
@@ -52,7 +52,7 @@ export default function BlogIndex() {
         <div className="mb-12">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">Blog</h1>
           <p className="text-xl text-gray-600 max-w-2xl">
-            Notes from the workshop — pricing breakdowns, case studies, and engineering writeups on building websites that actually generate leads.
+            Notes from the workshop — case studies, growth data, and honest lessons from building and operating a portfolio of niche sites and tools.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ export default function BlogIndex() {
             <img src="/logo1.png" alt="Modern Site Builders" className="w-10 h-10 object-contain" />
             <span className="ml-3 text-xl font-bold">Modern Site Builders</span>
           </Link>
-          <p className="text-gray-400 mb-4">Professional websites for local businesses and working professionals.</p>
+          <p className="text-gray-400 mb-4">Building and operating useful internet businesses in public.</p>
           <p className="text-gray-500 text-sm mb-2">© 2026 Modern Site Builders. Built by David Miles.</p>
           <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors inline-block">
             Privacy Policy

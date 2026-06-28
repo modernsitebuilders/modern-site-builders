@@ -64,7 +64,7 @@ export default function PostContent() {
       </ul>
 
       <p className="mb-4">
-        Thinking about a calculator site for your industry? <a href="/#contact" className="text-blue-600 hover:underline">Reach out</a> — most categories that involve estimation, sizing, or pricing have room for a much better tool than what's currently ranking.
+        Most categories that involve estimation, sizing, or pricing have room for a much better tool than what's currently ranking — which is why I keep building them. More of these teardowns are in the <a href="/blog/" className="text-blue-600 hover:underline">build logs</a>.
       </p>
     </>
   );

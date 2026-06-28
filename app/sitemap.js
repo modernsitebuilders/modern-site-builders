@@ -8,6 +8,7 @@ export default function sitemap() {
   const staticRoutes = [
     { url: `${BASE}/`, lastModified: today, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${BASE}/blog/`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${BASE}/author/david-miles/`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/privacy/`, lastModified: today, changeFrequency: 'yearly', priority: 0.3 },
   ];
 

@@ -62,7 +62,7 @@ export default function PostContent() {
         Plenty of categories work like this. Photographers can have a print catalog → custom shoot funnel. Designers can have a template store → custom design funnel. Consultants can have a tool or assessment → engagement funnel.
       </p>
       <p className="mb-4">
-        Thinking about productizing a service? <a href="/#contact" className="text-blue-600 hover:underline">Reach out</a> — I'm happy to look at your business and tell you whether a catalog-style funnel would work for what you sell.
+        Productizing a service is one of my favorite models to build. If you're experimenting with a catalog-to-custom funnel of your own and want to compare notes, <a href="/#contact" className="text-blue-600 hover:underline">reach out</a>.
       </p>
     </>
   );

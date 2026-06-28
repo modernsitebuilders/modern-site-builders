@@ -69,7 +69,7 @@ export default function PostContent() {
         If you don't want to go through all 10 questions, here's the compressed test: ask them for one site they're proud of and the analytics on it, run their own site through PageSpeed, and ask what's in their default SEO scope. Anyone who answers all three confidently is in the top quartile of developers you can hire.
       </p>
       <p className="mb-4">
-        I'm happy to be on the receiving end of those questions any time. <a href="/#contact" className="text-blue-600 hover:underline">Get in touch</a> if you want to start a conversation.
+        These are the same questions I hold my own builds to. If you're hiring — or building your own and want to compare notes — <a href="/#contact" className="text-blue-600 hover:underline">get in touch</a>.
       </p>
     </>
   );
