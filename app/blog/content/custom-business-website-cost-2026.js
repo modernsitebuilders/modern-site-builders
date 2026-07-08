@@ -24,7 +24,7 @@ export default function PostContent() {
       <p className="mb-4">
         Sites built around an interactive tool — a calculator, configurator, quote builder, or booking system. These sites rank exceptionally well because Google rewards utility, and they convert visitors at 3-5x the rate of brochure sites because users get value before they ever fill out a form. Examples in the wild include{' '}
         <a href="https://rightdumpster.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">RightDumpster</a> (dumpster sizing calculator) and{' '}
-        <a href="https://remodelcalculators.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">RemodelCalculators</a> (40+ construction estimators).
+        <a href="https://remodelcalculators.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">RemodelCalculators</a> (70+ construction estimators).
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What's not included in those numbers</h2>

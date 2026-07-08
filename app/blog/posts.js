@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'build-log-225-diagrams-remodelcalculators',
+    title: 'Build Log: Why I Made 225 Original Diagrams for One Calculator Site',
+    metaTitle: 'Build Log: 225 Original Diagrams for a Calculator Site',
+    description:
+      'Why I drew 225 original, labeled construction diagrams for RemodelCalculators — the EEAT case for original illustrations, and how each one doubles as a Pinterest distribution asset.',
+    date: '2026-07-08',
+    updated: '2026-07-08',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Build Log', 'SEO'],
+    ogImage: '/Screenshot-remodelcalculators.jpg',
+  },
+  {
     slug: 'custom-business-website-cost-2026',
     title: 'How Much Does a Custom Business Website Cost in 2026?',
     description:
@@ -81,12 +94,12 @@ export const posts = [
   },
   {
     slug: 'behind-the-build-remodelcalculators',
-    title: 'Behind the Build: RemodelCalculators — A 40+ Calculator Suite on Next.js',
-    metaTitle: "Behind the Build: RemodelCalculators' 40+ Calculator Suite",
+    title: 'Behind the Build: RemodelCalculators — A 70+ Calculator Suite on Next.js',
+    metaTitle: "Behind the Build: RemodelCalculators' 70+ Calculator Suite",
     description:
-      'How RemodelCalculators grew from a single drywall tool to a 40+ calculator suite covering interior, exterior, and code-compliance estimation.',
+      'How RemodelCalculators grew from a single drywall tool to a 70+ calculator suite covering interior, exterior, and code-compliance estimation.',
     date: '2026-05-20',
-    updated: '2026-05-20',
+    updated: '2026-07-08',
     readMinutes: 8,
     author: 'David Miles',
     tags: ['Case Study', 'Interactive Tools'],

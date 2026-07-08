@@ -2,7 +2,7 @@ export default function PostContent() {
   return (
     <>
       <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-        RemodelCalculators started as a single drywall calculator. Eighteen months later it's a suite of 40+ tools covering interior, exterior, foundation, and building-code compliance — and it's become my standard reference for what a calculator-driven SEO site looks like at scale. Here's how it grew, and the architectural decisions that made the growth possible.
+        RemodelCalculators started as a single drywall calculator. Eighteen months later it's a suite of 70+ tools covering interior, exterior, foundation, and building-code compliance — and it's become my standard reference for what a calculator-driven SEO site looks like at scale. Here's how it grew, and the architectural decisions that made the growth possible.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Why start with drywall?</h2>
@@ -13,7 +13,7 @@ export default function PostContent() {
         Once that single calculator was bringing in steady traffic, the question stopped being "should we build more?" and became "which one next?"
       </p>
 
-      <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Picking the next 40 calculators</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Picking the next 70 calculators</h2>
       <p className="mb-4">
         I picked subsequent calculators using three filters in this order:
       </p>
@@ -25,7 +25,7 @@ export default function PostContent() {
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The architecture that made it scale</h2>
       <p className="mb-4">
-        At 5 calculators you can hand-build each one. At 40+ you'd lose your mind. So the site is built on a shared calculator framework with three primitives:
+        At 5 calculators you can hand-build each one. At 70+ you'd lose your mind. So the site is built on a shared calculator framework with three primitives:
       </p>
       <ul className="list-disc pl-6 mb-4 space-y-2">
         <li><strong>Input fields</strong> — typed (number, dimension, dropdown) with built-in validation and unit conversion.</li>

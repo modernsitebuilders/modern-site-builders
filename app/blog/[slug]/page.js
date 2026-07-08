@@ -11,8 +11,10 @@ import HowToChooseAWebDeveloper from '../content/how-to-choose-a-web-developer';
 import BehindTheBuildMeetBackdrops from '../content/behind-the-build-meetbackdrops';
 import BehindTheBuildWolfResume from '../content/behind-the-build-wolfresume';
 import LocalSEOChecklist2026 from '../content/local-seo-checklist-2026';
+import BuildLog225Diagrams from '../content/build-log-225-diagrams-remodelcalculators';
 
 const contentBySlug = {
+  'build-log-225-diagrams-remodelcalculators': BuildLog225Diagrams,
   'custom-business-website-cost-2026': CustomBusinessWebsiteCost2026,
   'behind-the-build-rightdumpster': BehindTheBuildRightDumpster,
   'behind-the-build-remodelcalculators': BehindTheBuildRemodelCalculators,
