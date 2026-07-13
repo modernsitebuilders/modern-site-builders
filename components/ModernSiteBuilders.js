@@ -34,7 +34,7 @@ const ModernSiteBuilders = () => {
   const portfolio = [
     {
       title: "RemodelCalculators",
-      description: "A 40+ construction calculator suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro tools for contractors.",
+      description: "A 70+ construction calculator suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro tools for contractors.",
       tech: "Next.js • React • Pro Plans",
       image: "/Screenshot-remodelcalculators.jpg",
       url: "https://remodelcalculators.com",
@@ -71,6 +71,14 @@ const ModernSiteBuilders = () => {
       image: "/Screenshot-promptdynamo.jpg",
       url: "https://promptdynamo.com",
       eventLabel: "promptdynamo_live"
+    },
+    {
+      title: "FigureMoney",
+      description: "A 25-calculator personal-finance suite — mortgage, auto, debt, investing, retirement, savings, and paycheck tax tools — that shows the formula and sources behind every result.",
+      tech: "Next.js • React • Programmatic SEO",
+      image: "/Screenshot-figuremoney.jpg",
+      url: "https://figuremoney.com",
+      eventLabel: "figuremoney_live"
     }
   ];
 
@@ -189,7 +197,7 @@ const ModernSiteBuilders = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">The Portfolio</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Five live properties, each built and operated independently. Every one has a build log telling the real story behind it.
+              Six live properties, each built and operated independently. Every one has a build log telling the real story behind it.
             </p>
           </div>
 

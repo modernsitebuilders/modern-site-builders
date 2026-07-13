@@ -121,7 +121,7 @@ export default function RootLayout({ children }) {
         "url": "https://modernsitebuilders.com",
         "logo": "https://modernsitebuilders.com/logo1.png",
         "image": "https://modernsitebuilders.com/logo1.png",
-        "description": "Modern Site Builders is the umbrella for a portfolio of niche websites and interactive tools built and operated by David Miles — covering construction calculators, dumpster sizing, virtual meeting backgrounds, ATS-ready resumes, and AI prompt packs.",
+        "description": "Modern Site Builders is the umbrella for a portfolio of niche websites and interactive tools built and operated by David Miles — covering construction calculators, dumpster sizing, virtual meeting backgrounds, ATS-ready resumes, AI prompt packs, and personal-finance calculators.",
         "founder": { "@id": "https://modernsitebuilders.com/#david-miles" },
         "contactPoint": {
           "@type": "ContactPoint",

@@ -8,7 +8,7 @@ const projects = [
   {
     name: 'RemodelCalculators',
     url: 'https://remodelcalculators.com',
-    blurb: 'A 40+ construction calculator suite for contractors and DIY remodels.',
+    blurb: 'A 70+ construction calculator suite for contractors and DIY remodels.',
     log: '/blog/behind-the-build-remodelcalculators/',
   },
   {
@@ -35,17 +35,23 @@ const projects = [
     blurb: 'Done-for-you AI prompt packs for working professionals.',
     log: null,
   },
+  {
+    name: 'FigureMoney',
+    url: 'https://figuremoney.com',
+    blurb: 'A 25-calculator personal-finance suite that shows the formula and sources behind every result.',
+    log: '/blog/behind-the-build-figuremoney/',
+  },
 ];
 
 export const metadata = {
   title: 'David Miles — Independent Web Builder & Operator',
   description:
-    'David Miles designs, builds, and operates a portfolio of niche websites and interactive tools — RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, and PromptDynamo — and writes the build logs behind them.',
+    'David Miles designs, builds, and operates a portfolio of niche websites and interactive tools — RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, PromptDynamo, and FigureMoney — and writes the build logs behind them.',
   alternates: { canonical: '/author/david-miles' },
   openGraph: {
     title: 'David Miles — Independent Web Builder & Operator',
     description:
-      'The builder behind RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, and PromptDynamo. Building useful internet businesses in public.',
+      'The builder behind RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, PromptDynamo, and FigureMoney. Building useful internet businesses in public.',
     url: PROFILE_URL,
     type: 'profile',
     images: [{ url: '/profile_pic-1.png', width: 512, height: 512, alt: 'David Miles' }],
@@ -54,7 +60,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'David Miles — Independent Web Builder & Operator',
     description:
-      'The builder behind RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, and PromptDynamo.',
+      'The builder behind RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, PromptDynamo, and FigureMoney.',
     images: ['/profile_pic-1.png'],
   },
 };

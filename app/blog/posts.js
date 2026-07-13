@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'behind-the-build-figuremoney',
+    title: 'Behind the Build: FigureMoney and Ranking in a YMYL Niche',
+    metaTitle: "Behind the Build: FigureMoney's YMYL Trust Strategy",
+    description:
+      'Personal finance is the hardest niche on the internet to rank and get ad-approved in. Here is how FigureMoney — a 25-calculator suite — was built to earn trust: show every formula, cite every source, and cover paycheck taxes state by state.',
+    date: '2026-07-13',
+    updated: '2026-07-13',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['Case Study', 'SEO'],
+    ogImage: '/Screenshot-figuremoney.jpg',
+  },
+  {
     slug: 'build-log-225-diagrams-remodelcalculators',
     title: 'Build Log: Why I Made 225 Original Diagrams for One Calculator Site',
     metaTitle: 'Build Log: 225 Original Diagrams for a Calculator Site',
