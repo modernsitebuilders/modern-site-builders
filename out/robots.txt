@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://modernsitebuilders.com/sitemap.xml
+
+# LLMs: https://modernsitebuilders.com/llms.txt

@@ -105,6 +105,14 @@ export default function RootLayout({ children }) {
       "url": "https://promptdynamo.com",
       "description": "Done-for-you AI prompt packs for working professionals.",
       "sameAs": ["https://www.facebook.com/profile.php?id=61588539059595"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://figuremoney.com/#website",
+      "name": "FigureMoney",
+      "url": "https://figuremoney.com",
+      "description": "Personal-finance calculators that show the formula and sources behind every result.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61592035468967"]
     }
   ]
 
