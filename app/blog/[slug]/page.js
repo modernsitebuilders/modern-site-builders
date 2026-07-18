@@ -18,8 +18,10 @@ import BehindTheBuildPromptDynamo from '../content/behind-the-build-promptdynamo
 import GetCitedByAIGeo from '../content/get-cited-by-ai-geo';
 import ProgrammaticSEOWithoutSpam from '../content/programmatic-seo-without-spam';
 import HowIKeepMoneySitesAccurate from '../content/how-i-keep-money-sites-accurate';
+import HowLongToRankNewSite2026 from '../content/how-long-to-rank-new-site-2026';
 
 const contentBySlug = {
+  'how-long-to-rank-new-site-2026': HowLongToRankNewSite2026,
   'programmatic-seo-without-spam': ProgrammaticSEOWithoutSpam,
   'how-i-keep-money-sites-accurate': HowIKeepMoneySitesAccurate,
   'get-cited-by-ai-geo': GetCitedByAIGeo,

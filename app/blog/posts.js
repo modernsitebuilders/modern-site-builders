@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'how-long-to-rank-new-site-2026',
+    title: 'How Long Does It Take to Rank a New Website in 2026?',
+    metaTitle: 'How Long Does It Take to Rank a New Website in 2026?',
+    description:
+      'An honest, operator-tested timeline for ranking a new site — the indexing lull, long-tail traction, and compounding phases — plus what actually speeds it up and what quietly slows you down. From someone who has launched six sites from zero.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['SEO', 'Business Websites'],
+    ogImage: '/logo1.png',
+  },
+  {
     slug: 'programmatic-seo-without-spam',
     title: 'Programmatic SEO Without the Spam',
     metaTitle: 'Programmatic SEO Without the Spam: The Line That Matters',
