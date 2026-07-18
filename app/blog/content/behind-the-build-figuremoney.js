@@ -32,7 +32,7 @@ export default function PostContent() {
         Take-home pay is one of the highest-intent searches in personal finance, and it's inherently local — "paycheck calculator" means something different in Texas (no state income tax) than in California (nine brackets). Generic national calculators get this wrong, and searchers can tell.
       </p>
       <p className="mb-4">
-        So FigureMoney generates a dedicated paycheck page for each state from a single 2026 tax dataset — 42 state landing pages, each with that state's real withholding rules, all driven off one data file rather than 42 hand-built pages. It's the same programmatic-SEO play behind the city pages on my other sites: one template, structured data, real per-location accuracy. Add a state's numbers to the dataset and its page builds itself.
+        So FigureMoney generates a dedicated paycheck page for every state from a single 2026 tax dataset — 51 landing pages in all, one for each state plus Washington, D.C. The 42 states with an income tax each get their real bracket structure; the nine no-tax states get a page explaining their take-home reflects only federal tax and FICA. It's all driven off one data file rather than 51 hand-built pages — the same programmatic-SEO play behind the city pages on my other sites: one template, structured data, real per-location accuracy. Add a state's numbers to the dataset and its page builds itself.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">One formula engine, 25 calculators</h2>
