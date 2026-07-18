@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'get-cited-by-ai-geo',
+    title: 'Getting Cited by AI: How I Optimize My Sites for ChatGPT and Perplexity (GEO)',
+    metaTitle: 'Getting Cited by AI: A GEO Playbook for ChatGPT & Perplexity',
+    description:
+      'Generative Engine Optimization in practice — how I set up a six-site network to get cited by AI search: answer-first structure, verifiable sourcing, a unified author entity, and a build-time llms.txt plus self-updating sitemap.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['SEO', 'AI Tools'],
+    ogImage: '/logo1.png',
+  },
+  {
     slug: 'why-calculators-rank',
     title: 'Why Calculators Rank: Interactive Tools as an SEO Moat',
     metaTitle: 'Why Calculators Rank: Interactive Tools as an SEO Moat',

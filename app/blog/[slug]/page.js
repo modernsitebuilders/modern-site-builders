@@ -15,8 +15,10 @@ import BuildLog225Diagrams from '../content/build-log-225-diagrams-remodelcalcul
 import BehindTheBuildFigureMoney from '../content/behind-the-build-figuremoney';
 import WhyCalculatorsRank from '../content/why-calculators-rank';
 import BehindTheBuildPromptDynamo from '../content/behind-the-build-promptdynamo';
+import GetCitedByAIGeo from '../content/get-cited-by-ai-geo';
 
 const contentBySlug = {
+  'get-cited-by-ai-geo': GetCitedByAIGeo,
   'why-calculators-rank': WhyCalculatorsRank,
   'behind-the-build-promptdynamo': BehindTheBuildPromptDynamo,
   'behind-the-build-figuremoney': BehindTheBuildFigureMoney,
