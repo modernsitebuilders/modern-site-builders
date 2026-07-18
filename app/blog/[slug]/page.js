@@ -16,8 +16,12 @@ import BehindTheBuildFigureMoney from '../content/behind-the-build-figuremoney';
 import WhyCalculatorsRank from '../content/why-calculators-rank';
 import BehindTheBuildPromptDynamo from '../content/behind-the-build-promptdynamo';
 import GetCitedByAIGeo from '../content/get-cited-by-ai-geo';
+import ProgrammaticSEOWithoutSpam from '../content/programmatic-seo-without-spam';
+import HowIKeepMoneySitesAccurate from '../content/how-i-keep-money-sites-accurate';
 
 const contentBySlug = {
+  'programmatic-seo-without-spam': ProgrammaticSEOWithoutSpam,
+  'how-i-keep-money-sites-accurate': HowIKeepMoneySitesAccurate,
   'get-cited-by-ai-geo': GetCitedByAIGeo,
   'why-calculators-rank': WhyCalculatorsRank,
   'behind-the-build-promptdynamo': BehindTheBuildPromptDynamo,

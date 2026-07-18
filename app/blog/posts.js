@@ -4,6 +4,32 @@
 
 export const posts = [
   {
+    slug: 'programmatic-seo-without-spam',
+    title: 'Programmatic SEO Without the Spam',
+    metaTitle: 'Programmatic SEO Without the Spam: The Line That Matters',
+    description:
+      'The line between useful programmatic pages and doorway spam is real data per page. How FigureMoney generates a paycheck page for all 50 states plus D.C. off one dataset — and the five rules that keep a generated page set on the right side of that line.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['SEO', 'Programmatic SEO'],
+    ogImage: '/Screenshot-figuremoney.jpg',
+  },
+  {
+    slug: 'how-i-keep-money-sites-accurate',
+    title: 'How I Keep Money Sites Accurate: An E-E-A-T Playbook for YMYL',
+    metaTitle: 'How I Keep Money Sites Accurate: A YMYL E-E-A-T Playbook',
+    description:
+      'On a YMYL site a wrong number is a broken promise. The system I use to keep money sites correct at scale — one formula engine, one source of truth per constant, verifiable methodology, and a real author — and why that discipline is what earns E-E-A-T.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['SEO', 'YMYL'],
+    ogImage: '/Screenshot-figuremoney.jpg',
+  },
+  {
     slug: 'get-cited-by-ai-geo',
     title: 'Getting Cited by AI: How I Optimize My Sites for ChatGPT and Perplexity (GEO)',
     metaTitle: 'Getting Cited by AI: A GEO Playbook for ChatGPT & Perplexity',

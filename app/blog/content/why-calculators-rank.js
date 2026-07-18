@@ -40,7 +40,7 @@ export default function PostContent() {
         The reason calculators scale so well for a solo operator is that the expensive part — the math — gets written once and reused everywhere. Build one correct finance library and it powers dozens of calculators. FigureMoney is 25 calculators across seven clusters, all importing from a single formula engine, so the mortgage page and the auto-loan page can never disagree about how interest compounds. RemodelCalculators grew the same way — from one drywall tool to more than 70 — because each new calculator is data and a formula, not a hand-built site.
       </p>
       <p className="mb-4">
-        The same structure unlocks programmatic pages. "Paycheck calculator" is inherently local — Texas has no state income tax, California has nine brackets — so FigureMoney generates a dedicated page for each state off one tax dataset: 42 landing pages, each accurate to that state's real withholding rules, driven by data rather than 42 hand-built pages. One engine, structured data, real per-location accuracy. That's how you cover a whole keyword map without a whole team.
+        The same structure unlocks programmatic pages. "Paycheck calculator" is inherently local — Texas has no state income tax, California has nine brackets — so FigureMoney generates a dedicated page for each state off one tax dataset: a page for every state plus D.C., 51 in all, each accurate to that state's real withholding rules, driven by data rather than 51 hand-built pages. One engine, structured data, real per-location accuracy. That's how you cover a whole keyword map without a whole team.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">How to build one that actually ranks</h2>
