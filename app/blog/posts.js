@@ -4,6 +4,32 @@
 
 export const posts = [
   {
+    slug: 'why-calculators-rank',
+    title: 'Why Calculators Rank: Interactive Tools as an SEO Moat',
+    metaTitle: 'Why Calculators Rank: Interactive Tools as an SEO Moat',
+    description:
+      'Why interactive calculators out-rank and out-convert articles in boring, high-intent niches — the intent match, the engagement signals, the defensibility, and how to build one that compounds.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 8,
+    author: 'David Miles',
+    tags: ['SEO', 'Interactive Tools'],
+    ogImage: '/Screenshot-remodelcalculators.jpg',
+  },
+  {
+    slug: 'behind-the-build-promptdynamo',
+    title: 'Behind the Build: PromptDynamo and Selling in a Commoditized Niche',
+    metaTitle: 'Behind the Build: PromptDynamo in a Commoditized Niche',
+    description:
+      'AI prompts are the least defensible digital product there is — the whole internet gives them away. Here is how PromptDynamo was built to rank and convert anyway: role-based packs, a free-sample funnel, and one typed registry driving the store.',
+    date: '2026-07-18',
+    updated: '2026-07-18',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Case Study', 'AI Tools'],
+    ogImage: '/Screenshot-promptdynamo.jpg',
+  },
+  {
     slug: 'behind-the-build-figuremoney',
     title: 'Behind the Build: FigureMoney and Ranking in a YMYL Niche',
     metaTitle: "Behind the Build: FigureMoney's YMYL Trust Strategy",

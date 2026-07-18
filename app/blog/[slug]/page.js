@@ -13,8 +13,12 @@ import BehindTheBuildWolfResume from '../content/behind-the-build-wolfresume';
 import LocalSEOChecklist2026 from '../content/local-seo-checklist-2026';
 import BuildLog225Diagrams from '../content/build-log-225-diagrams-remodelcalculators';
 import BehindTheBuildFigureMoney from '../content/behind-the-build-figuremoney';
+import WhyCalculatorsRank from '../content/why-calculators-rank';
+import BehindTheBuildPromptDynamo from '../content/behind-the-build-promptdynamo';
 
 const contentBySlug = {
+  'why-calculators-rank': WhyCalculatorsRank,
+  'behind-the-build-promptdynamo': BehindTheBuildPromptDynamo,
   'behind-the-build-figuremoney': BehindTheBuildFigureMoney,
   'build-log-225-diagrams-remodelcalculators': BuildLog225Diagrams,
   'custom-business-website-cost-2026': CustomBusinessWebsiteCost2026,
