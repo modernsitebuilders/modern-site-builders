@@ -1,26 +1,59 @@
 {
   "pages": {
     "/_not-found/page": [
-      "static/chunks/webpack-889906d2d9470bce.js",
+      "static/chunks/webpack-c5245809344e32f3.js",
       "static/chunks/fd9d1056-f5ca11604835b0e5.js",
       "static/chunks/23-a7bde6ad9fd1c144.js",
       "static/chunks/main-app-468e427ac4be3b01.js",
       "static/chunks/app/_not-found/page-6bbf6d64fd14e58e.js"
     ],
     "/layout": [
-      "static/chunks/webpack-889906d2d9470bce.js",
+      "static/chunks/webpack-c5245809344e32f3.js",
       "static/chunks/fd9d1056-f5ca11604835b0e5.js",
       "static/chunks/23-a7bde6ad9fd1c144.js",
       "static/chunks/main-app-468e427ac4be3b01.js",
-      "static/css/77a6a32be9571ed5.css",
-      "static/chunks/app/layout-fa7472a2388ff1fa.js"
+      "static/css/9e13fe5c2ec87653.css",
+      "static/chunks/223-d86b2d7f08b112f3.js",
+      "static/chunks/app/layout-2f1a8d0b922b724d.js"
     ],
     "/page": [
-      "static/chunks/webpack-889906d2d9470bce.js",
+      "static/chunks/webpack-c5245809344e32f3.js",
       "static/chunks/fd9d1056-f5ca11604835b0e5.js",
       "static/chunks/23-a7bde6ad9fd1c144.js",
       "static/chunks/main-app-468e427ac4be3b01.js",
-      "static/chunks/app/page-417a69ea9171501f.js"
+      "static/chunks/app/page-9efa9b8ab0ee94eb.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-c5245809344e32f3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-a7bde6ad9fd1c144.js",
+      "static/chunks/main-app-468e427ac4be3b01.js",
+      "static/chunks/app/privacy/page-095f2529b47af856.js"
+    ],
+    "/blog/[slug]/page": [
+      "static/chunks/webpack-c5245809344e32f3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-a7bde6ad9fd1c144.js",
+      "static/chunks/main-app-468e427ac4be3b01.js",
+      "static/chunks/231-e52611ba3fabc686.js",
+      "static/chunks/223-d86b2d7f08b112f3.js",
+      "static/chunks/app/blog/[slug]/page-f065616ab963296e.js"
+    ],
+    "/blog/page": [
+      "static/chunks/webpack-c5245809344e32f3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-a7bde6ad9fd1c144.js",
+      "static/chunks/main-app-468e427ac4be3b01.js",
+      "static/chunks/231-e52611ba3fabc686.js",
+      "static/chunks/app/blog/page-a669ec0f27e4be3c.js"
+    ],
+    "/author/david-miles/page": [
+      "static/chunks/webpack-c5245809344e32f3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-a7bde6ad9fd1c144.js",
+      "static/chunks/main-app-468e427ac4be3b01.js",
+      "static/chunks/231-e52611ba3fabc686.js",
+      "static/chunks/app/author/david-miles/page-bd7ea4b59940e806.js"
     ]
   }
 }
