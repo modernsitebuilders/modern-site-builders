@@ -99,9 +99,9 @@ export const posts = [
     title: 'Behind the Build: FigureMoney and Ranking in a YMYL Niche',
     metaTitle: "Behind the Build: FigureMoney's YMYL Trust Strategy",
     description:
-      'Personal finance is the hardest niche on the internet to rank and get ad-approved in. Here is how FigureMoney — a 25-calculator suite — was built to earn trust: show every formula, cite every source, and cover paycheck taxes state by state.',
+      'Personal finance is the hardest niche on the internet to rank and get ad-approved in. Here is how FigureMoney — a 42-calculator suite — was built to earn trust: show every formula, cite every source, and cover paycheck taxes state by state.',
     date: '2026-07-13',
-    updated: '2026-07-13',
+    updated: '2026-11-01',
     readMinutes: 8,
     author: 'David Miles',
     tags: ['Case Study', 'SEO'],
@@ -114,7 +114,7 @@ export const posts = [
     description:
       'Why I drew 225 original, labeled construction diagrams for RemodelCalculators — the EEAT case for original illustrations, and how each one doubles as a Pinterest distribution asset.',
     date: '2026-07-08',
-    updated: '2026-07-08',
+    updated: '2026-11-01',
     readMinutes: 7,
     author: 'David Miles',
     tags: ['Build Log', 'SEO'],
@@ -198,12 +198,12 @@ export const posts = [
   },
   {
     slug: 'behind-the-build-remodelcalculators',
-    title: 'Behind the Build: RemodelCalculators — A 70+ Calculator Suite on Next.js',
-    metaTitle: "Behind the Build: RemodelCalculators' 70+ Calculator Suite",
+    title: 'Behind the Build: RemodelCalculators — A 146-Calculator Suite on Next.js',
+    metaTitle: "Behind the Build: RemodelCalculators' 146-Calculator Suite",
     description:
-      'How RemodelCalculators grew from a single drywall tool to a 70+ calculator suite covering interior, exterior, and code-compliance estimation.',
+      'How RemodelCalculators grew from a single drywall tool to a 146-calculator suite covering interior, exterior, and code-compliance estimation.',
     date: '2026-05-20',
-    updated: '2026-07-08',
+    updated: '2026-11-01',
     readMinutes: 8,
     author: 'David Miles',
     tags: ['Case Study', 'Interactive Tools'],

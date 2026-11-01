@@ -4,7 +4,11 @@ export default function PostContent() {
       <p className="text-xl text-gray-600 mb-8 leading-relaxed">
         Over the last few months I drew 225 original technical diagrams for{' '}
         <a href="https://remodelcalculators.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">RemodelCalculators</a>{' '}
-        — one for nearly every concept the site's 70+ calculators touch. Not stock photos, not clip art: labeled, to-code, made-for-this-site figures. People keep asking why I'd spend that kind of time on pictures for a calculator. This is the honest answer, and why I think it's one of the highest-leverage things I've built all year.
+        — one for nearly every concept the site's 146 calculators touch. Not stock photos, not clip art: labeled, to-code, made-for-this-site figures. People keep asking why I'd spend that kind of time on pictures for a calculator. This is the honest answer, and why I think it's one of the highest-leverage things I've built all year.
+      </p>
+
+      <p className="mb-8 text-sm text-gray-500 italic">
+        Update, November 2026: the diagram library has since grown past 370, and RemodelCalculators now has 146 calculators. The 225 figure and the build approach below are from the original milestone.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The problem with a calculator that has no pictures</h2>
@@ -32,7 +36,7 @@ export default function PostContent() {
         The first instinct is to make one hero image per calculator. That's the wrong unit. Calculators share concepts — a dozen tools touch "cubic yards," several touch "IECC climate zone," a whole cluster depends on "what actually goes under a slab." So I drew diagrams at the level of the <strong>concept</strong>, then reused each one across every calculator and article that references it.
       </p>
       <p className="mb-4">
-        That's why 70+ calculators produced 225 diagrams rather than one apiece: each tool needs several concepts explained, and each concept diagram earns its keep in multiple places. Same principle as the calculator framework itself — build a reusable primitive once, wire it in everywhere.
+        That's why 146 calculators produced 225 diagrams rather than one apiece: each tool needs several concepts explained, and each concept diagram earns its keep in multiple places. Same principle as the calculator framework itself — build a reusable primitive once, wire it in everywhere.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Why original beats stock (the real EEAT angle)</h2>

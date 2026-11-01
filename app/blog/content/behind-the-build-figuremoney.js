@@ -35,9 +35,9 @@ export default function PostContent() {
         So FigureMoney generates a dedicated paycheck page for every state from a single 2026 tax dataset — 51 landing pages in all, one for each state plus Washington, D.C. The 42 states with an income tax each get their real bracket structure; the nine no-tax states get a page explaining their take-home reflects only federal tax and FICA. It's all driven off one data file rather than 51 hand-built pages — the same programmatic-SEO play behind the city pages on my other sites: one template, structured data, real per-location accuracy. Add a state's numbers to the dataset and its page builds itself.
       </p>
 
-      <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">One formula engine, 25 calculators</h2>
+      <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">One formula engine, 42 calculators</h2>
       <p className="mb-4">
-        The suite is 25 calculators across seven clusters — Mortgage &amp; Home, Auto, Investing, Retirement, Savings, Paycheck &amp; Salary, and Loans &amp; Debt. That range only works because the actual math lives in one place: a single finance library that every calculator imports from.
+        The suite is 42 calculators across nine clusters — Mortgage &amp; Home, Auto, Investing, Retirement, Savings, Paycheck &amp; Salary, Taxes, Loans &amp; Debt, and Everyday Money Math. That range only works because the actual math lives in one place: a single finance library that every calculator imports from.
       </p>
       <p className="mb-4">
         Centralizing the logic isn't just tidy — in a YMYL niche it's the accuracy strategy. Amortization, compound interest, and effective-rate math get written and checked <em>once</em>, then reused everywhere. There's no drift where the mortgage page and the auto-loan page disagree about how interest compounds, because they're calling the same function. When the trust pitch is "our numbers are right," you cannot afford twenty-five slightly different implementations of the same formula.

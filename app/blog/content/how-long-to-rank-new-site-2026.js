@@ -26,7 +26,7 @@ export default function PostContent() {
         This is where a well-built site starts to move — but on the <em>long tail</em> first. You won't rank for the two-word head term; you'll start ranking for the specific, lower-competition four- and five-word queries. "Paycheck calculator" is a war. "Paycheck calculator for salaried employees in Ohio" is winnable early, and there are thousands of those.
       </p>
       <p className="mb-4">
-        The sites in my network all grew this way. RemodelCalculators didn't launch and rank for "remodel calculator" — it started catching specific "how much [material] for [job]" searches, one at a time, and compounded from there as it grew from a single drywall tool to more than 70 calculators. Check Search Console weekly in this phase: you're looking for the list of queries you get impressions for to grow, even if clicks are still small. Impressions before clicks, clicks before rankings, rankings before revenue — in that order.
+        The sites in my network all grew this way. RemodelCalculators didn't launch and rank for "remodel calculator" — it started catching specific "how much [material] for [job]" searches, one at a time, and compounded from there as it grew from a single drywall tool to 146 calculators. Check Search Console weekly in this phase: you're looking for the list of queries you get impressions for to grow, even if clicks are still small. Impressions before clicks, clicks before rankings, rankings before revenue — in that order.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Phase 3: Compounding authority (months 6–18)</h2>

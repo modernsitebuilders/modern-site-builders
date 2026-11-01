@@ -16,7 +16,7 @@ export default function PostContent() {
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">1. One formula engine, never twenty copies</h2>
       <p className="mb-4">
         The math lives in exactly one place. On{' '}
-        <a href="https://figuremoney.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">FigureMoney</a>, all 25 calculators import from a single finance library — amortization, compound interest, effective-rate, present-value math written and checked once, then reused everywhere. The mortgage page and the auto-loan page physically cannot disagree about how interest compounds, because they're calling the same function.
+        <a href="https://figuremoney.com" target="_blank" rel="noopener" className="text-blue-600 hover:underline">FigureMoney</a>, all 42 calculators import from a single finance library — amortization, compound interest, effective-rate, present-value math written and checked once, then reused everywhere. The mortgage page and the auto-loan page physically cannot disagree about how interest compounds, because they're calling the same function.
       </p>
       <p className="mb-4">
         This is the highest-leverage accuracy decision you can make. Twenty-five separate implementations of the same formula means twenty-five chances for one to drift; one implementation means a fix or a correction lands everywhere at once. When your entire pitch is "our numbers are right," you cannot afford copies.
