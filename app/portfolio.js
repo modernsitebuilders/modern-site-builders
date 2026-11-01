@@ -4,7 +4,7 @@
 export const portfolio = [
   {
     title: "RemodelCalculators",
-    description: "A 70+ construction calculator suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro tools for contractors.",
+    description: "A 146-calculator construction suite covering drywall, concrete, paint, roofing, flooring, and more — with Pro tools for contractors.",
     tech: "Next.js • React • Pro Plans",
     image: "/Screenshot-remodelcalculators.jpg",
     url: "https://remodelcalculators.com",
@@ -44,7 +44,7 @@ export const portfolio = [
   },
   {
     title: "FigureMoney",
-    description: "A 25-calculator personal-finance suite — mortgage, auto, debt, investing, retirement, savings, and paycheck tax tools — that shows the formula and sources behind every result.",
+    description: "A 42-calculator personal-finance suite — mortgage, auto, debt, investing, retirement, savings, and paycheck tax tools — that shows the formula and sources behind every result.",
     tech: "Next.js • React • Programmatic SEO",
     image: "/Screenshot-figuremoney.jpg",
     url: "https://figuremoney.com",

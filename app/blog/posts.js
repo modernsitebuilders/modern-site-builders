@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'network-update-fall-2026',
+    title: 'Network Update: The Real Numbers, Fall 2026',
+    metaTitle: 'Network Update: The Real Numbers (Fall 2026)',
+    description:
+      'Building in public means publishing the numbers. Six live sites, ~$237/month combined: RemodelCalculators carrying the network, a Journey-to-AdSense switch that lifted RPM, MeetBackdrops flat, FigureMoney breaking into search with a 9x impression ramp, and RightDumpster still at zero.',
+    date: '2026-11-01',
+    updated: '2026-11-01',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Build Log', 'Building in Public'],
+    ogImage: '/logo1.png',
+  },
+  {
     slug: 'how-long-to-rank-new-site-2026',
     title: 'How Long Does It Take to Rank a New Website in 2026?',
     metaTitle: 'How Long Does It Take to Rank a New Website in 2026?',
