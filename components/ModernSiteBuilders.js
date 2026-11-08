@@ -147,7 +147,7 @@ const ModernSiteBuilders = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">The Portfolio</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Six live properties, each built and operated independently. Every one has a build log telling the real story behind it.
+              Seven live properties, each built and operated independently. Every one has a build log telling the real story behind it.
             </p>
           </div>
 

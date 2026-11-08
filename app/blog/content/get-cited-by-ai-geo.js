@@ -38,7 +38,7 @@ export default function PostContent() {
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">4. A consistent author entity across the network</h2>
       <p className="mb-4">
-        Models weigh who is behind a claim, not just the claim. Across all six of my sites, every page references the <em>same</em> David Miles author entity — one stable identity, linked from each property back to a single author profile on this hub. That tells both Google and an AI crawler that one real operator stands behind the whole network, which is a stronger signal than six anonymous sites each asserting expertise in isolation.
+        Models weigh who is behind a claim, not just the claim. Across all seven of my sites, every page references the <em>same</em> David Miles author entity — one stable identity, linked from each property back to a single author profile on this hub. That tells both Google and an AI crawler that one real operator stands behind the whole network, which is a stronger signal than seven anonymous sites each asserting expertise in isolation.
       </p>
       <p className="mb-4">
         If you publish across multiple properties, unify the author identity deliberately. A scattered, inconsistent byline is a missed trust signal in a world where "who says so" is part of the ranking.

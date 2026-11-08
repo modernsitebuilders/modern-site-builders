@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'launching-truedrivecost',
+    title: 'Launching TrueDriveCost: 11 Calculators for the True Cost of Owning a Car',
+    metaTitle: 'Launching TrueDriveCost: The True Cost of Owning a Car',
+    description:
+      'The seventh site in the network just went live. TrueDriveCost is 11 free calculators that go past the sticker price — a True Cost to Own tool that totals depreciation, fuel, insurance, maintenance, interest, and fees per year, month, and mile, with every formula shown and every default sourced from AAA, the EIA, the FHWA, and the EPA.',
+    date: '2026-11-07',
+    updated: '2026-11-07',
+    readMinutes: 5,
+    author: 'David Miles',
+    tags: ['Build Log', 'Interactive Tools'],
+    ogImage: '/truedrivecost-favicon.png',
+  },
+  {
     slug: 'network-update-fall-2026',
     title: 'Network Update: The Real Numbers, Fall 2026',
     metaTitle: 'Network Update: The Real Numbers (Fall 2026)',
@@ -21,7 +34,7 @@ export const posts = [
     title: 'How Long Does It Take to Rank a New Website in 2026?',
     metaTitle: 'How Long Does It Take to Rank a New Website in 2026?',
     description:
-      'An honest, operator-tested timeline for ranking a new site — the indexing lull, long-tail traction, and compounding phases — plus what actually speeds it up and what quietly slows you down. From someone who has launched six sites from zero.',
+      'An honest, operator-tested timeline for ranking a new site — the indexing lull, long-tail traction, and compounding phases — plus what actually speeds it up and what quietly slows you down. From someone who has launched seven sites from zero.',
     date: '2026-07-18',
     updated: '2026-07-18',
     readMinutes: 8,
@@ -60,7 +73,7 @@ export const posts = [
     title: 'Getting Cited by AI: How I Optimize My Sites for ChatGPT and Perplexity (GEO)',
     metaTitle: 'Getting Cited by AI: A GEO Playbook for ChatGPT & Perplexity',
     description:
-      'Generative Engine Optimization in practice — how I set up a six-site network to get cited by AI search: answer-first structure, verifiable sourcing, a unified author entity, and a build-time llms.txt plus self-updating sitemap.',
+      'Generative Engine Optimization in practice — how I set up a seven-site network to get cited by AI search: answer-first structure, verifiable sourcing, a unified author entity, and a build-time llms.txt plus self-updating sitemap.',
     date: '2026-07-18',
     updated: '2026-07-18',
     readMinutes: 8,

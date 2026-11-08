@@ -41,12 +41,18 @@ const projects = [
     blurb: 'A 25-calculator personal-finance suite that shows the formula and sources behind every result.',
     log: '/blog/behind-the-build-figuremoney/',
   },
+  {
+    name: 'TrueDriveCost',
+    url: 'https://truedrivecost.com',
+    blurb: 'An 11-calculator suite for the true cost of car ownership, with every formula shown and defaults sourced from AAA, the EIA, the FHWA, and the EPA.',
+    log: '/blog/launching-truedrivecost/',
+  },
 ];
 
 export const metadata = {
   title: 'David Miles — Independent Web Builder & Operator',
   description:
-    'David Miles designs, builds, and operates a portfolio of niche websites and interactive tools — RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, PromptDynamo, and FigureMoney — and writes the build logs behind them.',
+    'David Miles designs, builds, and operates a portfolio of niche websites and interactive tools — RemodelCalculators, RightDumpster, MeetBackdrops, WolfResume, PromptDynamo, FigureMoney, and TrueDriveCost — and writes the build logs behind them.',
   alternates: { canonical: '/author/david-miles' },
   openGraph: {
     title: 'David Miles — Independent Web Builder & Operator',

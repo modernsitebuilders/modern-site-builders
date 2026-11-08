@@ -2,7 +2,7 @@ export default function PostContent() {
   return (
     <>
       <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-        The honest answer is three to twelve months to see real traction, and twelve to twenty-four before a new site is pulling its weight — assuming you're doing the work and not just waiting. I've launched six sites from zero, so this isn't a guess from a case study I read. Here's what the timeline actually looks like, what moves it faster, and what a new site owner should expect at each stage instead of panicking in month two.
+        The honest answer is three to twelve months to see real traction, and twelve to twenty-four before a new site is pulling its weight — assuming you're doing the work and not just waiting. I've launched seven sites from zero, so this isn't a guess from a case study I read. Here's what the timeline actually looks like, what moves it faster, and what a new site owner should expect at each stage instead of panicking in month two.
       </p>
 
       <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Why there's no single number</h2>

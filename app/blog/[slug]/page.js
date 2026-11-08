@@ -20,8 +20,10 @@ import ProgrammaticSEOWithoutSpam from '../content/programmatic-seo-without-spam
 import HowIKeepMoneySitesAccurate from '../content/how-i-keep-money-sites-accurate';
 import HowLongToRankNewSite2026 from '../content/how-long-to-rank-new-site-2026';
 import NetworkUpdateFall2026 from '../content/network-update-fall-2026';
+import LaunchingTrueDriveCost from '../content/launching-truedrivecost';
 
 const contentBySlug = {
+  'launching-truedrivecost': LaunchingTrueDriveCost,
   'network-update-fall-2026': NetworkUpdateFall2026,
   'how-long-to-rank-new-site-2026': HowLongToRankNewSite2026,
   'programmatic-seo-without-spam': ProgrammaticSEOWithoutSpam,

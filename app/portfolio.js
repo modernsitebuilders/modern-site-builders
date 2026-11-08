@@ -49,5 +49,13 @@ export const portfolio = [
     image: "/Screenshot-figuremoney.jpg",
     url: "https://figuremoney.com",
     eventLabel: "figuremoney_live"
+  },
+  {
+    title: "TrueDriveCost",
+    description: "An 11-calculator suite for the true cost of owning a car — depreciation, fuel, insurance, maintenance, interest, and fees totaled per year, month, and mile, with every formula shown and defaults sourced from AAA, the EIA, the FHWA, and the EPA.",
+    tech: "Next.js • React • Interactive Tools",
+    image: "/truedrivecost-favicon.png",
+    url: "https://truedrivecost.com",
+    eventLabel: "truedrivecost_live"
   }
 ];
