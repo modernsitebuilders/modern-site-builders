@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'truedrivecost-car-ownership-database',
+    title: 'Inside the TrueDriveCost Expansion: From 11 Calculators to a Car-Ownership Database',
+    metaTitle: 'TrueDriveCost: From Calculators to a Car-Cost Database',
+    description:
+      'One week after launch, TrueDriveCost went from 11 calculators to a sourced database of what specific cars cost to own: a 124-vehicle dataset with its own cost-to-own pages and TrueDriveCost Score, ~319 pre-built comparison pages, by-state insurance/tax/registration pages across all 50 states, and the discipline to label the 75 vehicles it can only rate provisionally.',
+    date: '2026-11-15',
+    updated: '2026-11-15',
+    readMinutes: 7,
+    author: 'David Miles',
+    tags: ['Build Log', 'Programmatic SEO'],
+    ogImage: '/truedrivecost-favicon.png',
+  },
+  {
     slug: 'launching-truedrivecost',
     title: 'Launching TrueDriveCost: 11 Calculators for the True Cost of Owning a Car',
     metaTitle: 'Launching TrueDriveCost: The True Cost of Owning a Car',
