@@ -22,8 +22,10 @@ import HowLongToRankNewSite2026 from '../content/how-long-to-rank-new-site-2026'
 import NetworkUpdateFall2026 from '../content/network-update-fall-2026';
 import LaunchingTrueDriveCost from '../content/launching-truedrivecost';
 import TrueDriveCostCarOwnershipDatabase from '../content/truedrivecost-car-ownership-database';
+import LaunchingTrueDogCost from '../content/launching-truedogcost';
 
 const contentBySlug = {
+  'launching-truedogcost': LaunchingTrueDogCost,
   'truedrivecost-car-ownership-database': TrueDriveCostCarOwnershipDatabase,
   'launching-truedrivecost': LaunchingTrueDriveCost,
   'network-update-fall-2026': NetworkUpdateFall2026,

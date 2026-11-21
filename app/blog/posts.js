@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'launching-truedogcost',
+    title: 'Launching TrueDogCost: 5 Calculators for the True Cost of Owning a Dog',
+    metaTitle: 'Launching TrueDogCost: The True Cost of Owning a Dog',
+    description:
+      'The eighth site in the network just went live. TrueDogCost is 5 free calculators for what a dog really costs — a Cost to Own tool that totals food, vet care, insurance, grooming, and boarding by breed and state, per year, month, and day, with every formula shown and every default sourced from MoneyGeek, NAPHIA, Rover, and a 584,734-dog lifespan study.',
+    date: '2026-11-21',
+    updated: '2026-11-21',
+    readMinutes: 5,
+    author: 'David Miles',
+    tags: ['Build Log', 'Interactive Tools'],
+    ogImage: '/truedogcost-favicon.png',
+  },
+  {
     slug: 'truedrivecost-car-ownership-database',
     title: 'Inside the TrueDriveCost Expansion: From 11 Calculators to a Car-Ownership Database',
     metaTitle: 'TrueDriveCost: From Calculators to a Car-Cost Database',

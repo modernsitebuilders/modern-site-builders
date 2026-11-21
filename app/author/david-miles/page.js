@@ -51,7 +51,7 @@ const projects = [
     name: 'TrueDogCost',
     url: 'https://truedogcost.com',
     blurb: 'A 5-calculator suite for the true cost of dog ownership, with every formula shown and defaults sourced from MoneyGeek, NAPHIA, Rover, and a 584,734-dog lifespan study.',
-    log: null,
+    log: '/blog/launching-truedogcost/',
   },
 ];
 
