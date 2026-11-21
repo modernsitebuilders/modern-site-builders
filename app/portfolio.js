@@ -57,5 +57,13 @@ export const portfolio = [
     image: "/truedrivecost-favicon.png",
     url: "https://truedrivecost.com",
     eventLabel: "truedrivecost_live"
+  },
+  {
+    title: "TrueDogCost",
+    description: "A 5-calculator suite for the true cost of owning a dog — food, vet care, insurance, grooming, and boarding totaled by breed and state, per year, month, and day, with every formula shown and defaults sourced from MoneyGeek, NAPHIA, Rover, and a 584,734-dog lifespan study.",
+    tech: "Next.js • React • Interactive Tools",
+    image: "/truedogcost-favicon.png",
+    url: "https://truedogcost.com",
+    eventLabel: "truedogcost_live"
   }
 ];
