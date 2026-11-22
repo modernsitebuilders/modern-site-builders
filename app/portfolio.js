@@ -65,5 +65,13 @@ export const portfolio = [
     image: "/truedogcost-favicon.png",
     url: "https://truedogcost.com",
     eventLabel: "truedogcost_live"
+  },
+  {
+    title: "TruePoolCost",
+    description: "A transparency-first calculator for the true lifetime cost of owning a swimming pool — install, pump electricity, water, chemicals, maintenance, and a replacement reserve, totaled per year and month, with every default sourced and dated. The flagship Cost to Own a Pool tool is live; the rest of the 5-tool suite is rolling out.",
+    tech: "Next.js • React • Interactive Tools",
+    image: "/truepoolcost-favicon.png",
+    url: "https://truepoolcost.com",
+    eventLabel: "truepoolcost_live"
   }
 ];

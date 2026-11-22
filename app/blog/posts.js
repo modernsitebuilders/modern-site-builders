@@ -4,6 +4,19 @@
 
 export const posts = [
   {
+    slug: 'launching-truepoolcost',
+    title: 'Launching TruePoolCost: The True Lifetime Cost of Owning a Pool',
+    metaTitle: 'Launching TruePoolCost: The True Cost of a Pool',
+    description:
+      'The ninth site in the network just went live. TruePoolCost totals the true lifetime cost of owning a swimming pool — install, pump electricity, water, chemicals, maintenance, and a replacement reserve, per year and month. The flagship Cost to Own a Pool calculator is live now, on an energy backbone sourced from the DOE and the EIA, with the rest of the 5-tool suite rolling out.',
+    date: '2026-11-22',
+    updated: '2026-11-22',
+    readMinutes: 5,
+    author: 'David Miles',
+    tags: ['Build Log', 'Interactive Tools'],
+    ogImage: '/truepoolcost-favicon.png',
+  },
+  {
     slug: 'launching-truedogcost',
     title: 'Launching TrueDogCost: 5 Calculators for the True Cost of Owning a Dog',
     metaTitle: 'Launching TrueDogCost: The True Cost of Owning a Dog',
