@@ -113,6 +113,28 @@ export default function RootLayout({ children }) {
       "url": "https://figuremoney.com",
       "description": "Personal-finance calculators that show the formula and sources behind every result.",
       "sameAs": ["https://www.facebook.com/profile.php?id=61592035468967"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://truedrivecost.com/#website",
+      "name": "TrueDriveCost",
+      "url": "https://truedrivecost.com",
+      "description": "Calculators for the true cost of owning a car — depreciation, fuel, insurance, maintenance, and fees.",
+      "sameAs": ["https://www.facebook.com/profile.php?id=61596416967642"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://truedogcost.com/#website",
+      "name": "TrueDogCost",
+      "url": "https://truedogcost.com",
+      "description": "Calculators for the true cost of owning a dog — food, vet care, insurance, grooming, and boarding."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://truepoolcost.com/#website",
+      "name": "TruePoolCost",
+      "url": "https://truepoolcost.com",
+      "description": "Calculators for the true lifetime cost of owning a swimming pool — install, upkeep, and replacement."
     }
   ]
 
